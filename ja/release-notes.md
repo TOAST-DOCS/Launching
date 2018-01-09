@@ -1,0 +1,1 @@
+## Game > Launching > Release Notes
