@@ -29,3 +29,8 @@ Launching 서비스에서는 다음 용어를 사용 합니다.
 | KEY | 트리 구조의 최하단 단말노드로서 값(value)을 가짐                                        |
 
 [표 1 Launching 용어]
+
+## 서비스 흐름
+
+![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/toastcloud/static/common/img/cms_img/launching/service_flow.png)
+<center>[그림 1 서비스 흐름]</center>
