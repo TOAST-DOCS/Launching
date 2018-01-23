@@ -32,5 +32,5 @@ Launching 서비스에서는 다음 용어를 사용 합니다.
 
 ## 서비스 흐름
 
-![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/toastcloud/static/common/img/cms_img/launching/service_flow.png)
+![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/prod_launching/service_flow.png)
 <center>[그림 1 서비스 흐름]</center>
