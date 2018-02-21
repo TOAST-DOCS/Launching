@@ -1,4 +1,4 @@
-## Game > Launching > 개요 
+## Game > Launching > Overview 
 
 모바일 앱을 실행하기 위해서는 서버의 정보, 공지사항 URL, 다운로드 URL등 다양한 정보가 필요합니다. 하지만 모바일 앱에 필요한 정보가 변경 된다면 새로운 모바일 앱 배포가 필요 합니다.  Launching은 모바일 앱 실행 시 초기 실행에 필요한 다양한 정보를 실시간 반영하는 기능을 제공하여 앱 배포 없이 운영하도록 지원합니다.
 
@@ -29,3 +29,8 @@ Launching 서비스에서는 다음 용어를 사용 합니다.
 | KEY | 트리 구조의 최하단 단말노드로서 값(value)을 가짐                                        |
 
 [표 1 Launching 용어]
+
+## 서비스 흐름
+
+![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/prod_launching/service_flow.png)
+<center>[그림 1 서비스 흐름]</center>

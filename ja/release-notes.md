@@ -1,4 +1,5 @@
 ## Game > Launching > Release Notes
+
 ## Release Notes
 
 ### 2014.08.20

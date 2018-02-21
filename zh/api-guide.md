@@ -1,4 +1,4 @@
-## Game > Launching > API 가이드
+## Game > Launching > API Guide
 
 Console에서 Launching 서비스를 활성화 한 후, 모바일 앱에 필요한 Launching 정보를 설정하였다면 다음과 같이 해당 데이터를 조회 할 수 있습니다.
 
@@ -67,3 +67,4 @@ Content-Type: application/json;charset=UTF-8
 
 > [참고]
 > 요청 결과는 JSON 문자열입니다. 애플리케이션에서는 해당 문자열을 파싱하여 사용하면 됩니다.
+

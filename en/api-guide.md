@@ -1,4 +1,4 @@
-## Game > Launching > API 가이드
+## Game > Launching > API Guide
 
 Console에서 Launching 서비스를 활성화 한 후, 모바일 앱에 필요한 Launching 정보를 설정하였다면 다음과 같이 해당 데이터를 조회 할 수 있습니다.
 

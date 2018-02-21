@@ -1,5 +1,4 @@
 ## Game > Launching > Error Code
-
 ## 에러 코드
 
 에러 코드는 HTTP Response Status 결과코드 값을 의미합니다.

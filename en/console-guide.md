@@ -1,4 +1,4 @@
-## Game > Launching > 콘솔 사용 가이드
+## Game > Launching > Console Guide
 
 Launching 서비스를 사용하기 위한 절차는 다음과 같습니다.
 
