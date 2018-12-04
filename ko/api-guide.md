@@ -107,7 +107,7 @@ GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/conf
 
 [Request Sample - 01]
 
-```http
+```
 GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
 ```
 
