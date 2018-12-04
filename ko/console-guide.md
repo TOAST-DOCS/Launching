@@ -112,7 +112,7 @@ Launching 정보에서 특정 폴더 및 키를 복사한 후, 다른 폴더를 
 서버 로직을 추가하기 위해서는 로직이 동작하는 시작 시각 및 종료 시각, 로직이 적용되는 조건 및 결과를 입력해야 합니다. 
 
 조건에는 최종 결과가 Boolean 인 Javascript 의 조건문을 사용할 수 있습니다.
-서버에 등록된 Launching 정보 및 Launching 조회 API의 GET 파라미터 값을 변수로 사용할 수 있습니다. Launching 정보는 [launching.{folder}.{key}] 형식으로 사용할 수 있으며, 그 외에는 전부 API의 파라미터로 인식합니다.
+서버에 등록된 Launching 정보 및 Launching 조회 API의 GET 파라미터 값을 일반 변수로 취급하여 사용할 수 있습니다. Launching 정보는 [launching.{folder}.{key}] 형식으로 사용할 수 있으며, 그 외에는 전부 일반 변수로 인식합니다.
 
 결과는 로직의 조건이 맞을 경우, Launching 정보를 변경하는 설정으로, [launching.{folder}.{key}] 형식으로 사용 할 수 있습니다.
 
