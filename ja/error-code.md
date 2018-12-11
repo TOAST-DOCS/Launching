@@ -1,14 +1,18 @@
 ## Game > Launching > Error Code
 ## 에러 코드
 
-에러 코드는 HTTP Response Status 결과코드 값을 의미합니다.
+에러 코드는 Response body의 header에 있는 resultCode 및 resultMessage의 의미를 설명합니다.
 
 [표1 에러 코드]
 
-| Result Code | 설명                                                |
-| ----------- | ------------------------------------------------- |
-| 200         | OK : 요청 성공                                        |
-| 400         | Bad Request : 잘못된 요청일 경우                          |
-| 401         | Unauthorized : 유효하지 않은 App Key일 경우                |
-| 404         | Not Found : 요청한 리소스를 찾을 수 없을 경우                   |
-| 500         | Internal Server Error : 서버 내부적인 오류로, 관리자에게 문의 바람. |
+| Result Code | Result Message | 설명 |
+| --- | --- | --- |
+| 0 | Success | 요청 성공 |
+| 10001 | CONFIGURATION_GET_FAILED | Launching 정보 조회 실패 |
+| 90020 | APPKEY_VERIFICATION_FAILED | 등록되지 않은 AppKey |
+| 90404 | CONFIGURATION_PATH_NOT_FOUND | 주어진 서브 키에 대응되는 Launching 데이터를 찾을 수 없음 |
+| -1 | FAIL | 미확인 에러 |
+
+> [참고]
+> 그 외 일반적인 에러 코드에 대한 추가 정보는 다음 링크에서 확인하기 바랍니다.
+> http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
