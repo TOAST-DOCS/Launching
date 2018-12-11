@@ -1,179 +1,172 @@
 ## Game > Launching > 콘솔 사용 가이드
 
-Launching 서비스를 사용하기 위한 절차는 다음과 같습니다.
-
-### 서비스 활성화
-
-Launching 서비스를 사용하기 위해서는 Console에서 [Common] > [Launching] 을 선택한 후 [상품이용] 버튼을 클릭하여 서비스를 활성화시킵니다.
-
-![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/prod_launching/go/service_00.png)
-<center>[그림 1 Launching 서비스 활성화]</center>
-
-### URL & AppKey 확인
-
-서비스를 활성화 화면 자동으로 생성한 Launching URL & AppKey 값을 확인할 수 있습니다. URL & AppKey 값은 Launching 서비스 요청 시 파라미터로 사용합니다.
-
-![[그림 2 Launching URL & AppKey 확인]](http://static.toastoven.net/prod_launching/go/lnc_00.png)
-<center>[그림 2 Launching URL & AppKey 확인]</center>
-
 ## Launching 데이터 관리
 
 모바일 앱에서 사용할 Launching 데이터 설정 방법은 다음과 같습니다.
 
-### 데이터 조회
+## 설정정보
 
-Console에서 [Common] > [Lauching] 을 선택하면, 현재 설정된 Launching정보를 조회 할 수 있습니다.
+Console 화면의 **설정정보** 탭에서 현재 Launching 정보를 조회 할 수 있습니다.
 
-![[그림 3 Launching 템플릿 데이터]](http://static.toastoven.net/prod_launching/go/lnc_01.png)
-<center>[그림 3 Launching 템플릿 데이터]</center>
-
-> [참고]
-> Launching 서비스를 사용하면 [그림 3] 과 같이 기본으로 템플릿 데이터를 제공합니다.
-> (실제 템플릿 데이터는 [그림 3] 과는 다를 수 있습니다.)
-
-### 폴더 선택 및 변경
-
-런칭 정보의 좌측 탐색창에서 [폴더] 를 선택하면 우측에 해당 폴더의 정보가 출력이 되고, 선택된 폴더의 이름 및 설명을 변경 한 후, [적용] 을 누르면 해당 정보가 변경 됩니다.
-
-![[그림 4 폴더 선택 및 정보 변경]](http://static.toastoven.net/prod_launching/go/lnc_02.png)
-<center>[그림 4 폴더 선택 및 정보 변경]</center>
+![launching_01_201812](https://static.toastoven.net/prod_launching/launching_01_201812.png)
 
 > [참고]
-> [적용] 은 Console 내부적으로 변경 사항을 반영한 것으로, 수정된 사항을 서버에 반영 하려면 [배포] 탭에서 [배포] 를 하셔야 합니다.
+> Launching 서비스를 사용하면 위 그림과 같이 기본으로 템플릿 데이터를 제공합니다.
+> (실제 템플릿 데이터는 그림과는 다를 수 있습니다.)
 
-### 폴더 추가
+### 폴더 및 키 선택 및 변경
 
-런칭 정보의 좌측 탐색창에서 루트(launching) 또는 기존에 생성한 폴더를 선택한 후 마우스 우클릭을 하면 컨텍스트 메뉴창이 나타나며, 해당 메뉴에서 [폴더 추가] 를 선택하면 폴더를 추가 할 수 있습니다.
+Launching 정보의 좌측 탐색 창에서 폴더 및 키를 선택하면 우측에 해당 폴더/키의 정보가 출력이 되고, 선택된 폴더 및 키의 이름 및 설명을 변경 한 후, **확인** 버튼을 클릭하면 해당 정보가 변경 됩니다.
+![launching_02_201812](https://static.toastoven.net/prod_launching/launching_02_201812.png)
 
-![[그림 5 폴더 추가]](http://static.toastoven.net/prod_launching/go/lnc_03.png)
-<center>[그림 5 폴더 추가]</center>
+> [참고]
+> **확인** 버튼은 Console 내부적으로 변경 사항을 반영한 것으로, 수정된 사항을 서버에 반영 하려면 **배포** 탭에서 배포를 하셔야 합니다.
 
-### 키 선택 및 정보 변경
-
-런칭 정보의 좌측 탐색창에서 키를 선택하면 우측에 해당 키 정보가 출력 되고, 선택한 키의 이름 및 값 등을 변경 한 후, [저장] 을 누르면 해당 정보가 변경 됩니다.
-
-![[그림 6 KEY 정보 조회 및 값 변경]](http://static.toastoven.net/prod_launching/go/lnc_04.png)
-<center>[그림 6 KEY 정보 조회 및 값 변경]</center>
-
-> [주의]
-> [적용] 은 Console 내부적으로 변경 사항을 반영한 것으로, 수정된 사항을 서버에 반영 하려면 [배포] 탭에서 [배포] 를 하셔야 합니다.
-
-<br/>
 > [참고]
 > 서로 다른 폴더에 속하는 키는 동일한 키 이름을 가질 수 있지만, 하나의 폴더에 속하는 키들은 동일한 이름을 가질 수 없습니다. 즉, server 폴더 하단에 'ip'라는 키는 하나만 존재 가능하지만, client 라는 또 다른 폴더에 'ip'라는 키는 가질 수 있습니다.
 
-### 키 추가
+### 키 형식 변경
 
-런칭 정보의 좌측 탐색창에서 [폴더] 또는 [키] 를 선택 한 후 마우스 우클릭을 하면 컨텍스트 메뉴창이 나타나며, 해당 메뉴에서 [키 추가] 를 선택하면 키를 추가 할 수 있습니다.
+키를 선택하면 나타나는 우측의 키 정보에서 형식을 변경할 수 있습니다. 배열 형식으로 변경하면 해당 키에서 원하는 문자열 형식의 값을 추가하거나 삭제할 수 있습니다.
 
-![[그림 7 KEY 추가]](http://static.toastoven.net/prod_launching/go/lnc_05.png)
-<center>[그림 7 KEY 추가]</center>
+![launching_03_201812](https://static.toastoven.net/prod_launching/launching_03_201812.png)
 
-### 폴더 및 키 삭제
+### 폴더 및 키 작업
 
-런칭 정보의 좌측 탐색창에서 [폴더] 또는 [키] 를 선택한 후 마우스 우클릭을 하면 컨텍스트 메뉴창이 나타나며, [삭제] 를 선택하면 [폴더] 또는 [키] 를 삭제 할 수 있습니다.
+#### 추가
 
-![[그림 8 폴더 및 KEY 삭제]](http://static.toastoven.net/prod_launching/go/lnc_06.png)
-<center>[그림 8 폴더 및 KEY 삭제]</center>
+Launching 정보의 좌측 탐색 창에서 폴더를 선택한 후 마우스 우클릭을 하면 나타나는 메뉴를 통해 폴더 및 키를 추가하거나, 좌측 탐색 창 위의 **폴더 추가/키 추가** 버튼을 통해 폴더 및 키를 추가할 수 있습니다.
+
+![launching_04_201812](https://static.toastoven.net/prod_launching/launching_04_201812.png)
+
+#### 복사, 붙여넣기 및 삭제
+
+Launching 정보의 좌측 탐색창에서 폴더 또는 키를 선택한 후 나타나는 메뉴에서 **복사/삭제/붙여넣기** 버튼을 통해 여러 작업을 진행할 수 있습니다.
+
+![launching_05_201812](https://static.toastoven.net/prod_launching/launching_05_201812.png)
 
 > [참고]
 > 폴더를 삭제하면 해당 폴더에 속한 모든 하위 폴더 및 키를 삭제 합니다.
 
-### 로직 조회
+## 로직
 
-상단의 [로직] 탭을 누르면, 등록된 런칭 정보를 변경하기 위한 서버 로직 정보를 확인할 수 있습니다. 로직은 고정된 런칭 정보를 동적으로 변경하기 위한 비즈니스 로직을 의미하며, 서버에서 구동되기 때문에 모바일 앱의 업데이트 없이 변경된 런칭 정보를 얻을 수 있게 합니다.
+**로직** 탭을 누르면, 등록된 Launching 정보를 변경하기 위한 서버 로직 정보를 확인할 수 있습니다. 로직은 고정된 Launching 정보를 동적으로 변경하기 위한 비즈니스 로직을 의미하며, 서버에서 구동되기 때문에 모바일 앱의 업데이트 없이 변경된 Launching 정보를 얻을 수 있게 합니다.
 
-![[그림 9 런칭 정보 조회]](http://static.toastoven.net/prod_launching/go/logic_00.png)
-<center>[그림 9 런칭 정보 조회]</center>
+![launching_06_201812](https://static.toastoven.net/prod_launching/launching_06_201812.png)
 
 ### 로직 추가
 
-서버 로직을 추가하기 위해서는 로직이 동작하는 시각 시각 및 종료 시각, 로직이 적용되는 조건 및 결과를 입력해야 합니다. 조건에는 javascript 의 비교 연산자 및 괄호를 사용할 수 있으며 런칭 정보 및 런칭 조회 API 로부터 전달 받은 GET 파라미터 값을 변수로 사용 할 수 있습니다. 런칭 정보는 [launching.{folder}.{key}] 형식으로 사용할 수 있으며, 그외에는 전부 API 의 파라미터로 인식합니다. 사용자의 오타를 방지 하기 위해 콘솔에서 제공하는 자동완성 기능을 사용하는 것이 좋습니다. 결과는 로직의 조건이 맞을 경우 런칭 정보를 바꾸는 설정이고, 조건과 동일하게 [launching.{folder}.{key}] 형식으로 사용 할 수 있습니다.
+서버 로직을 추가하기 위해서는 로직이 동작하는 시작 시각 및 종료 시각, 로직이 적용되는 조건 및 결과를 입력해야 합니다.
 
-![[그림 10 로직 추가]](http://static.toastoven.net/prod_launching/go/logic_01.png)
-<center>[그림 10 로직 추가]</center>
+조건에는 최종 결과가 Boolean 인 Javascript 의 조건문을 사용할 수 있습니다.
+서버에 등록된 Launching 정보 및 Launching 조회 API의 GET 파라미터 값을 일반 변수로 취급하여 사용할 수 있습니다. Launching 정보는 [launching.{folder}.{key}] 형식으로 사용할 수 있으며, 그 외에는 전부 일반 변수로 인식합니다.
 
+결과는 로직의 조건이 맞을 경우, Launching 정보를 변경하는 설정으로, [launching.{folder}.{key}] 형식으로 사용 할 수 있습니다.
+
+적용 기간을 통해 해당 로직이 적용될 시간을 설정할 수 있으며, 종료 시간을 설정하지 않고 로직에 계속 적용되게 할 수도 있습니다.
+
+![launching_07_201812](https://static.toastoven.net/prod_launching/launching_07_201812.png)
 
 > [참고]
-> 결과로 지정한 런칭키가 존재 하지 않으면 새롭게 추가하고, 아니면 기존 정보를 덮어 쓰게 됩니다. 예를 들어, [그림2] 의 런칭정보를 기준으로 런칭키를 [launching.server.test] 결과값을 [127.0.0.1] 로 설정했다면, 런칭정보의 launching.server [폴더] 에 [test] 라는 키가 추가되고 그 값이 [127.0.0.1] 로 설정됩니다.
+> Launching 정보에서 결과로 지정한 키가 존재 하지 않으면 새롭게 추가하고, 아니면 기존 정보를 덮어 쓰게 됩니다.
 
-<br/>
 > [주의]
-> 로직의 조건은 최대 1KB 를 넘길 수 없습니다. 또한 로직의 결과는 최대 10개까지 등록 가능하며, 런칭키와 결과값은 최대 255 Bytes 를 넘길 수 없습니다.
+> 로직의 조건은 최대 1KB 를 넘길 수 없습니다. 또한 로직의 결과는 하나 이상 등록해야 하며, 로직 결과에서 설정하는 키와 결과 값은 최대 255 Bytes 를 넘길 수 없습니다.
 
 ### 로직 수정
 
-등록된 로직의 설명을 클릭하면 해당 로직을 수정 할 수 있습니다.
+등록된 로직을 클릭하면 해당 로직을 수정 할 수 있습니다.
 
-![[그림 11 로직 수정]](http://static.toastoven.net/prod_launching/go/logic_02.png)
-<center>[그림 11 로직 수정]</center>
+![launching_08_201812](https://static.toastoven.net/prod_launching/launching_08_201812.png)
 
-> [주의]
-> 로직의 모든 변경 사항은 최대 1분의 반영시간이 걸릴 수 있습니다.
+#### 로직 실행 / 정지
 
-### 1로직 실행 / 정지
+로직 목록에서 정지시키거나 실행 할 로직의 체크박스를 클릭하여 선택한 후, 상단의 **실행 / 정지** 버튼을 눌러 로직의 상태를 변경할 수 있습니다. 정지 상태의 로직은 Launching 정보를 수정하지 않습니다.
 
-로직 목록에서 정지 시키거나 실행할 로직의 체크박스를 클릭하여 선택한 후, 상단의 실행 / 정지 버튼을 눌러 로직의 상태를 변경할 수 있습니다. 정지 상태의 로직은 런칭정보를 수정하지 않습니다.
+#### 로직 삭제
 
-![[그림 12 로직 실행 / 정지]](http://static.toastoven.net/prod_launching/go/logic_03.png)
-<center>[그림 12 로직 실행 / 정지]</center>
+로직 목록에서 삭제할 로직의 체크박스를 클릭하여 선택한 후, 상단의 **삭제** 버튼을 눌러 로직을 삭제할 수 있습니다.
 
 > [주의]
-> 로직의 모든 변경 사항은 최대 1분의 반영시간이 걸릴 수 있습니다.
-
-### 로직 삭제
-
-로직 목록에서 삭제할 로직의 체크박스를 클릭하여 선택한 후, 상단의 삭제 버튼을 눌러 로직을 삭제할 수 있습니다.
-
-![[그림 13 로직 삭제]](http://static.toastoven.net/prod_launching/go/logic_04.png)
-<center>[그림 13 로직 삭제]</center>
-
-> [주의]
-> 로직의 모든 변경 사항은 최대 1분의 반영시간이 걸릴 수 있습니다.
+> 로직 실행 / 정지를 포함한 모든 변경 사항을 서버에 반영 하려면 **배포** 탭에서 배포를 하셔야 합니다.
 
 ### 로직 테스트
 
-런칭 정보를 서버에 배포하기 전에 로직을 테스트 할 수 있습니다. 런칭 정보를 호출 할 때 넘겨줄 파라미터와 로직의 적용 시각을 설정 후 [실행] 버튼을 누르면 하단에 로직이 적용된 런칭 정보를 미리 확인 할 수 있습니다. 여러개의 파라미터를 넘겨주는 것을 테스트 하려면 파라미터 가장 좌측의 [+]를 누르면 새로운 파라미터를 등록할 수 있습니다.
+Launching 정보를 서버에 배포하기 전에 로직을 테스트 할 수 있습니다. Launching 정보를 호출 할 때 넘겨줄 GET 파라미터와 로직의 적용 시각을 설정 후 **로직 테스트** 버튼을 누르면 하단에 로직이 적용된 Launching 정보를 미리 확인 할 수 있습니다.
 
-![[그림 14 로직 테스트]](http://static.toastoven.net/prod_launching/go/logic_05.png)
-<center>[그림 14 로직 테스트]</center>
+여러 개의 파라미터를 넘겨주는 것을 테스트 하기 위해 파라미터 가장 우측의 **+** 버튼을 클릭하면 새로운 파라미터를 등록할 수 있습니다.
 
-예를 들어, [그림 14] 의 테스트를 실행한 경우 [그림 15-3] 의 테스트 결과를 확인 할 수 있습니다.
+![launching_09_201812](https://static.toastoven.net/prod_launching/launching_09_201812.png)
 
-![[그림 15-1 예제 런칭 정보]](http://static.toastoven.net/prod_launching/go/logic_05-1.png)
-<center>[그림 15-1 예제 런칭 정보]</center>
+예를 들어, 그림과 같이 로직을 등록한 후 테스트를 진행하면 로직결과에서 테스트 결과를 확인 할 수 있습니다.
 
-![[그림 15-3 예제 테스트 결과]](http://static.toastoven.net/prod_launching/go/logic_05-2.png)
-<center>[그림 15-2 예제 테스트 결과]</center>
+로직의 조건으로 파라미터 'launching.server.cds' 의 값이 'TEST' 일 경우 [lauching.server.ip] 의 값에 '127.0.0.1' 를 넣도록 설정하였고, 로직 테스트시 GET 파라미터로 'launching.server.cds'에 TEST를 설정하였기 때문에 테스트 결과에서 [lauching.server.ip] 에 '127.0.0.1' 값이 들어간 것을 확인 할 수 있습니다.
 
-로직의 조건으로 파라미터 'osType' 의 값이 'IOS' 일 경우 [lauching.server.ip] 의 값에 '127.0.0.1' 를 넣도록 설정했기 때문에
-최종 테스트 결과를 보면 [lauching.server.ip] 의 값에 '127.0.0.1'이 들어간 것을 확인 할 수 있습니다.
+> [참고]
+> 로직 테스트 결과에서 노란색 음영이 처리된 부분은 실제 원본 Launching 정보에서 로직 및 GET 파라미터를 통해 연산하여 추가 / 변경된 키를 의미합니다.
 
-### 배포하기
+### 서브 키
 
-[런칭정보] 탭에서 수정한 사항을 서버에 반영하려면, 반드시 [배포]탭에서 배포를 하셔야 합니다. 배포를 하게 되면 배포 된 [런칭정보] 뿐만 아니라 배포하는 시점에 존재하는 [로직] 정보도 같이 저장이 됩니다. 배포에 걸리는 시간은 최대 1분이 소요되게 됩니다. 따라서 최대 1분 동안은 모바일 앱에서 이전 런칭 정보를 가져갈 수 있습니다.
+서브 키를 통해 Launching 정보에서 일부 데이터만을 받을 수 있습니다.
+서브 키는 "launching." 으로 시작하고, "." 로 조합되는 키로 이 키를 통해 전체 Launching 정보에서 일부 데이터를 받습니다.
 
-![[그림 16 배포 하기]](http://static.toastoven.net/prod_launching/go/deploy_00.png)
-<center>[그림 16 배포 하기]</center>
+다음 그림과 같이 서브 키를 [launching.server]로 지정하면 [launching.server] 에 있는 데이터만을 가져올 수 있습니다.
 
-### 설정공유
-
-[런칭정보] 및 [로직] 설정을 공유하기 위해 2가지 방법을 제공하고 있습니다. 하나는 클립보드를 이용하는 방법입니다. [배포] 탭의 [클립보드 복사] 를 누르면 현재 [런칭정보] 및 [로직] 설정을 json형태로 클립보드에 복사하게 됩니다. 복사된 json을 설정을 공유하고자 하는 프로젝트에서 [불러오기] 를 눌러 붙여넣으면 간편하게 정보를 공유 할 수 있습니다.
-
-![[그림 17 클립보드를 이용한 설정 공유]](http://static.toastoven.net/prod_launching/go/deploy_01.png)
-<center>[그림 17 클립보드를 이용한 설정 공유]</center>
-
-또 하나의 방법은 [공유] 버튼을 사용하는 것입니다. 배포 목록에서 공유하고자 하는 히스토리의 [공유] 버튼을 누르면, 공유 가능한 프로젝트 목록이 나오게 되고, 특정 프로젝트를 선택하면 해당 프로젝트로 설정이 공유 됩니다.
-
-![[그림 17 클립보드를 이용한 설정 공유]](http://static.toastoven.net/prod_launching/go/deploy_02.png)
-<center>[그림 17 클립보드를 이용한 설정 공유]</center>
+![launching_10_201812](https://static.toastoven.net/prod_launching/launching_10_201812.png)
 
 > [주의]
-> 클립보드를 이용하던지, [공유] 버튼을 이용하던지에 상관없이, 설정을 공유하거나 불러오게 되면 현재 설정 정보를 잃어버리게 되니 주의하여야 합니다.
+> 그림에서 볼 수 있는 것처럼, 서브 키도 GET 파라미터를 통해 지정합니다. "subKey"를 키로 설정한 GET 파라미터는 서브 키로 인식합니다.
 
-### 설정복원
+### 키 패턴
 
-배포 후 문제가 발생하거나, 이전 설정으로 돌아가고 싶으면 배포 목록에서 복원하고자 하는 히스토리의 [복원] 버튼을 누르면 됩니다.
+키 패턴은 "$." 로 시작하는 특수한 키로, 로직 조건 및 결과에서 사용할 수 있습니다.
+전체 또는 서브 키를 통해 받아오는 최종 결과인 Launching 정보의 루트에서 상대적인 위치를 지정합니다.
 
-![[그림 17 클립보드를 이용한 설정 공유]](http://static.toastoven.net/prod_launching/go/deploy_03.png)
-<center>[그림 17 클립보드를 이용한 설정 공유]</center>
+다음 그림과 같이 로직이 등록되어 있다고 가정하겠습니다.
+
+![launching_11_201812](https://static.toastoven.net/prod_launching/launching_11_201812.png)
+
+이러한 경우 서브 키를 지정하지 않은 경우 로직이 적용되지 않습니다.
+
+그러나 서브 키를 [launching.server] 를 지정하여 일부 데이터만을 가져올 경우, 로직 조건 "$.cds === 'TEST'"이 만족하게 되어, "$.ip = '127.0.0.1'" 에 의해 값이 변경됩니다.
+
+![launching_12_201812](https://static.toastoven.net/prod_launching/launching_12_201812.png)
+
+이 처럼 서브 키 및 키 패턴을 통해 Launching 정보를 유동적으로 변경할 수 있습니다.
+
+## Import
+
+**Import** 탭에서 다른 프로젝트의 Launching 서비스에 등록된 Launching 정보 및 로직을 Import 하거나 **Export** 탭의 **Json 형식으로 복사하기** 메뉴를 통해 복사한 Json 형식의 데이터로부터 가져올 수 있습니다.
+
+다른 프로젝트를 선택 후, **Start Import** 버튼을 통해 Launching 정보 및 로직을 Import 할 수 있습니다.
+
+**Json 형식으로부터 로드** 메뉴에서 Json 형식의 데이터로부터 Launching 정보 및 로직을 가져올 수도 있습니다.
+
+> [참고]
+> Import를 진행 한 후 Launching 정보 및 로직들을 **설정정보 / 로직** 탭에서 확인 및 테스트를 진행할 수 있습니다. Import를 진행하면 **배포** 탭에서 배포를 진행하셔야 서버에 반영됩니다.
+
+## Export
+
+**Export** 탭에서 다른 프로젝트의 Launching 서비스로 Launching 정보 및 로직을 Export 하거나, Json 형식의 데이터로 복사할 수 있습니다.
+
+다른 프로젝트를 선택 후, **Start Export** 버튼을 통해 Launching 정보 및 로직을 Export 할 수 있습니다.
+
+**Json 형식으로 복사하기** 메뉴에서 Json 형식의 데이터를 복사할 수 있습니다.
+
+## 배포
+
+**설정정보** 및 **로직** 탭에서 수정한 사항을 서버에 반영하기 위해서는 **배포** 탭에서 배포를 진행해야 합니다.
+**배포** 탭에서는 배포하기 전 그림과 같이 Launching 정보 및 로직, 설명의 수정 사항을 확인할 수 있습니다.
+
+![launching_13_201812](https://static.toastoven.net/prod_launching/launching_13_201812.png)
+
+**배포** 버튼을 통해 배포를 진행하면 서버에 반영되어 모바일 앱에서 변경된 Launching 정보를 가져가게 됩니다.
+**초기화** 버튼을 통해 Console 에서 수정한 내역을 다시 되돌릴 수 있습니다.
+
+배포를 진행하게 되면 Console 에서 수정하기 직전의 Launching 정보 및 로직들을 백업하게 됩니다. 이를 위해 **배포** 버튼을 클릭시 백업할 이름을 요구합니다.
+
+### 백업 내역 확인
+
+하단 백업 내역에서 현재까지 백업이 진행된 내역을 확인할 수 있습니다.
+
+**설정정보 / 로직 확인** 버튼을 통해 백업된 Launching 정보 및 로직들을 확인할 수 있고, 복원 및 삭제를 진행할 수 있습니다.
