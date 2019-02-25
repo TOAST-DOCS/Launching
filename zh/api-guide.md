@@ -1,13 +1,13 @@
-## Game > Launching > API Guide
+## Game > Launching > API 가이드
 
-Console에서 Launching 서비스를 활성화 한 후, 모바일 앱에 필요한 Launching 정보를 설정하였다면 다음과 같이 해당 데이터를 조회 할 수 있습니다.
+Console에서 Launching 서비스를 활성화한 후, 모바일 앱에 필요한 Launching 정보를 설정하면 다음과 같은 데이터를 조회할 수 있습니다.
 
 ## API 공통 정보
 
 ### 요청
 
-* API를 호출하기 위해서는 Launching 서비스의 AppKey가 필요합니다.
-* AppKey는 Console 메뉴 상단의 [URL & AppKey]를 통해 확인할 수 있습니다.
+* API를 호출하려면 Launching 서비스의 AppKey가 필요합니다.
+* AppKey는 Console 메뉴 상단의 **URL & AppKey**에서 확인할 수 있습니다.
 
 ### 응답
 
@@ -56,10 +56,10 @@ GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/{appKey}/configuratio
 
 | Name     | Type    | Required | Value | Note |
 | ------ | ------ | --- |-------------------- | --- |
-| subKey | String | Optional | 서브키 | "launching." 으로 시작 |
+| subKey | String | Optional | 서브 키 | "launching."으로 시작 |
 
-* subKey를 통해 Launching 정보에서 일부 데이터만을 가져올 수 있습니다.
-    * subKey는 "launching." 으로 시작해야 합니다.
+* subKey를 통해 Launching 정보에서 일부 데이터만 가져올 수 있습니다.
+    * subKey는 "launching."으로 시작해야 합니다.
 * subKey 외의 모든 GET 파라미터는 일반 변수로 취급하여 로직 조건에 사용할 수 있습니다.
 
 ---
