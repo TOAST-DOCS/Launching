@@ -1,19 +1,19 @@
-## Game > Launching > API 가이드
+## Game > Launching > APIガイド
 
-Console에서 Launching 서비스를 활성화한 후, 모바일 앱에 필요한 Launching 정보를 설정하면 다음과 같은 데이터를 조회할 수 있습니다.
+ConsoleでLaunchingサービスを有効にした後、モバイルアプリに必要なLaunching情報を設定すると、次のようなデータを照会できます。
 
-## API 공통 정보
+## API共通情報
 
-### 요청
+### リクエスト
 
-* API를 호출하려면 Launching 서비스의 AppKey가 필요합니다.
-* AppKey는 Console 메뉴 상단의 **URL & AppKey**에서 확인할 수 있습니다.
+* APIを呼び出すには、LaunchingサービスのAppKeyが必要です。
+* AppKeyは、Consoleメニュー上部にある**URL & AppKey**で確認できます。
 
-### 응답
+### レスポンス
 
-* 모든 응답 본문에는 다음과 같은 header를 포함합니다. 자세한 응답 결과는 오류 코드를 참고합니다.
+* すべてのレスポンス本文には、次のようなheaderを含めます。詳細なレスポンス結果は、エラーコードを参照してください。
 
-[성공 응답 본문]
+[成功レスポンス本文]
 ```json
 {
     "header": {
@@ -24,7 +24,7 @@ Console에서 Launching 서비스를 활성화한 후, 모바일 앱에 필요�
 }
 ```
 
-[실패 응답 본문]
+[失敗レスポンス本文]
 ```json
 {
     "header": {
@@ -36,9 +36,9 @@ Console에서 Launching 서비스를 활성화한 후, 모바일 앱에 필요�
 ```
 
 
-## Launching 데이터 조회
+## Launchingデータ照会
 
-Console을 사용하여 설정한 Launching 정보를 조회할 수 있는 방법입니다.
+Consoleを使用して設定したLaunching情報を照会する方法です。
 
 [Method, URI]
 
@@ -50,17 +50,17 @@ GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/{appKey}/configuratio
 
 | Name     | Type    | Value                   |
 | ------ | ------ | -------------------- |
-| appkey | String | Launching 서비스 AppKey |
+| appkey | String | LaunchingサービスAppKey |
 
 [Request Parameter]
 
 | Name     | Type    | Required | Value | Note |
 | ------ | ------ | --- |-------------------- | --- |
-| subKey | String | Optional | 서브 키 | "launching."으로 시작 |
+| subKey | String | Optional | サブキー | "launching."で開始 |
 
-* subKey를 통해 Launching 정보에서 일부 데이터만 가져올 수 있습니다.
-    * subKey는 "launching."으로 시작해야 합니다.
-* subKey 외의 모든 GET 파라미터는 일반 변수로 취급하여 로직 조건에 사용할 수 있습니다.
+* subKeyを通してLaunching情報から一部のデータのみを取得できます。
+    * subKeyは"launching."で始まる必要があります。
+* subKey以外のすべてのGETパラメータは一般変数として扱い、ロジック条件に使用できます。
 
 ---
 
