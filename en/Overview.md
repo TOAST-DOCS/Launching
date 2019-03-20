@@ -1,35 +1,35 @@
-## Game > Launching > 개요 
+## Game > Launching > Overview  
 
-모바일 앱을 실행하려면 서버 정보, 공지 사항 URL, 다운로드 URL 등 다양한 정보가 필요합니다. 그리고 이러한 모바일 앱 관련 정보가 변경되면 모바일 앱을 다시 배포해야 합니다.  Launching 서비스를 사용하면 모바일 앱을 처음 실행할 때 필요한 정보를 실시간으로 반영할 수 있어, 앱 정보가 변경되어도 다시 배포하지 않고 운영할 수 있습니다.
+To execute a mobile app, a variety of information is needed, including server information, URL for Notice, and URL for Download, and changing any such information requires re-deployment of the app. However, with the Launching Service, information required for an initial app execution can be applied in real time, with no need of app redeployment, even if information is changed.   
 
-## 주요 기능
+## Main Features 
 
-Launching 서비스에서는 다음과 같은 기능을 제공합니다.
+Launching provides the following features: 
 
-* **동적으로 변경 가능한 서비스 정보를 서버나 모바일 앱 패치 없이 변경 가능**
-서비스 모바일 앱을 처음 실행할 때 필요한 서버 정보, CDN 정보, 점검 상태 등의 변경 가능한 정보를 Launching에서 관리하면, 이러한 정보가 변경될 때 서버나 모바일 앱의 패치 작업이 필요 없습니다.
+* **Change service information available for dynamic changes, without server or mobile app patches**
+  Information that are open for change, such as server, CDN, or maintenance status, which are required for an initial mobile app execution, can be managed under the launching service, so that any change of information does not require server or mobile app patches. 
 
-* **새로운 모바일 앱 버전이 출시되어도 이전 버전 관리 가능**
-서비스 모바일 앱의 새로운 버전이 출시되면 이전 버전에 대한 업그레이드 알림, 강제 업데이트 수행 및 접속 불가 등의 동작을 설정할 수 있습니다.
+* **Manage previous versions, even on a new mobile app version**
+  With the release of a new version for mobile app, operations can be configured for previous versions, such as notification for upgrades, force updates, or restriction of access.   
 
-* **특정 단말기나 OS 버전에 따른 서비스 접근 제한 가능**
-특정 단말기 또는 iOS/Android 버전 업그레이드에 서비스 장애가 발생했을 때, 서버 및 모바일 앱 패치 없이 특정 단말기의 서비스를 제한할 수 있습니다.
+* **Restrict service access on particular devices or OS versions**
+  When iOS/Android version updates encounter service disruption, particular devices can be restricted from service, without server or mobile app patches.  
 
-* **사용자가 설정한 시간 동안 모바일 앱에 메시지 공지 가능**
-사용자가 설정한 시간 동안에만 점검 일정 및 이벤트 등을 공지할 수 있으며, 서비스 점검 중에는 서비스를 중단하고 점검 메시지를 공지할 수 있습니다.
+* **Announce messages on mobile app during user-configured period**
+  Notices for maintenance schedule and events can be announced only during user-configured period; while maintenance is underway, maintenance messages can be posted with the service suspended.  
 
-## 서비스 용어
+## Glossary 
 
-Launching 서비스에서 사용하는 용어는 다음과 같습니다.
+Terms as follows are used for the Launching Service: 
 
-| 용어  | 설명                                                                    |
+| Term | Description                                                       |
 | --- | --------------------------------------------------------------------- |
-| 론칭 | 서비스 단말기에서 앱을 구동할 때 필요한 초기 정보.                                       |
-| 폴더  | 론칭 정보는 트리(tree) 구조로 구성되는데, 이때 중간 노드를 '폴더'라고 함. 폴더는 또 다른 폴더나 키를 가질 수 있음. |
-| 키 KEY | 트리 구조의 최하단 단말 노드로, 값(value)을 가짐.                                     |
-| 서브 키 Sub Key | 전체 론칭 정보에서 일부 데이터만을 얻고자 할 때 사용하는 키. 'launching.'으로 시작하며, '.'로 조합됨. |
-| 키 패턴 Key Pattern | JSON 형식 설정 정보 루트의 상대적인 키. '$.'로 시작하며, '.'로 조합됨. |
+| Launching | Initial information required to run an app on a service device |
+| Folder | Launching information has the tree structure, and the nodes in the middle are called 'folders': a folder can have other folders or keys. |
+| Key | The lowest-level device node in the tree structure, with a value. |
+| Subkey | A key to get only partial data out of the entire launching information: started with 'launching' and combined with '.'. |
+| Key Pattern | A relative key of JSON-format configuration information route: started with '$' and combined with '.'. |
 
-## 서비스 흐름
+## Service Flow 
 
 ![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/prod_launching/en/overview_serviceflow.png)

@@ -1,19 +1,20 @@
-## Game > Launching > API 가이드
+## Game > Launching > API Guide
 
-Console에서 Launching 서비스를 활성화한 후, 모바일 앱에 필요한 Launching 정보를 설정하면 다음과 같은 데이터를 조회할 수 있습니다.
+Enable Launching Service on console and configure required launching information for a mobile app, and data as follows can be queried. 
 
-## API 공통 정보
+## Common API Information 
 
-### 요청
+### Request
 
-* API를 호출하려면 Launching 서비스의 AppKey가 필요합니다.
-* AppKey는 Console 메뉴 상단의 **URL & AppKey**에서 확인할 수 있습니다.
+* To call APIs, an Appkey of the launching service is required.   를
+* You can find AppKey from **URL & Appkey** on top of the console menu. 
 
-### 응답
+### Response 
 
-* 모든 응답 본문에는 다음과 같은 header를 포함합니다. 자세한 응답 결과는 오류 코드를 참고합니다.
+* Each response body includes header as below. For more response results, see Error Codes. 
 
-[성공 응답 본문]
+[Successful Response Body]
+
 ```json
 {
     "header": {
@@ -24,7 +25,8 @@ Console에서 Launching 서비스를 활성화한 후, 모바일 앱에 필요�
 }
 ```
 
-[실패 응답 본문]
+[Failed Response Body]
+
 ```json
 {
     "header": {
@@ -36,9 +38,9 @@ Console에서 Launching 서비스를 활성화한 후, 모바일 앱에 필요�
 ```
 
 
-## Launching 데이터 조회
+## Query Launching Data 
 
-Console을 사용하여 설정한 Launching 정보를 조회할 수 있는 방법입니다.
+Querying configured launching data on a console is as follows:  
 
 [Method, URI]
 
@@ -50,17 +52,17 @@ GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/{appKey}/configuratio
 
 | Name     | Type    | Value                   |
 | ------ | ------ | -------------------- |
-| appkey | String | Launching 서비스 AppKey |
+| Appkey | String | Appkey for Launching Service |
 
 [Request Parameter]
 
 | Name     | Type    | Required | Value | Note |
 | ------ | ------ | --- |-------------------- | --- |
-| subKey | String | Optional | 서브 키 | "launching."으로 시작 |
+| SubKey | String | Optional | Subkey | Start with "launching." |
 
-* subKey를 통해 Launching 정보에서 일부 데이터만 가져올 수 있습니다.
-    * subKey는 "launching."으로 시작해야 합니다.
-* subKey 외의 모든 GET 파라미터는 일반 변수로 취급하여 로직 조건에 사용할 수 있습니다.
+* Only partial launching data can be imported with a subKey. 
+    * The subKey must start with "launching.".
+* All GET parameters, other than Subkey, are considered as general parameters and can be applied as part of the logic conditions.  
 
 ---
 
