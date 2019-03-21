@@ -11,7 +11,7 @@ Enable Launching Service on console and configure required launching information
 
 ### Response 
 
-* Each response body includes header as below. For more response results, see Error Codes. 
+* Each response body includes a header as below. For more response results, see Error Codes. 
 
 [Successful Response Body]
 
