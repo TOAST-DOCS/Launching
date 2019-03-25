@@ -1,18 +1,15 @@
-## Game > Launching > Error Code
-## 에러 코드
+## Game > Launching > Error Codes 
+## Error Codes 
 
-에러 코드는 Response body의 header에 있는 resultCode 및 resultMessage의 의미를 설명합니다.
+Error codes describe resultCodes and resultMessages at the header of the response body. 
 
-[표1 에러 코드]
-
-| Result Code | Result Message | 설명 |
+| Result Code | Result Message | Description |
 | --- | --- | --- |
-| 0 | Success | 요청 성공 |
-| 10001 | CONFIGURATION_GET_FAILED | Launching 정보 조회 실패 |
-| 90020 | APPKEY_VERIFICATION_FAILED | 등록되지 않은 AppKey |
-| 90404 | CONFIGURATION_PATH_NOT_FOUND | 주어진 서브 키에 대응되는 Launching 데이터를 찾을 수 없음 |
-| -1 | FAIL | 미확인 에러 |
+| 0 | Success | Successfully requested |
+| 10001 | CONFIGURATION_GET_FAILED | Failed to query launching information |
+| 90020 | APPKEY_VERIFICATION_FAILED | Unregistered Appkey |
+| 90404 | CONFIGURATION_PATH_NOT_FOUND | Cannot find launching data corresponding to a given subkey |
+| -1 | FAIL | Unidentified error |
 
-> [참고]
-> 그 외 일반적인 에러 코드에 대한 추가 정보는 다음 링크에서 확인하기 바랍니다.
-> http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
+> [Note]
+> For additional information of other general error codes, check at "[Hypertext Transfer Protocol (HTTP) Status Code Registry](http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)"
