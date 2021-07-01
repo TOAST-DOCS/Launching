@@ -32,4 +32,4 @@ Launchingサービスで使用する用語は次のとおりです。
 
 ## サービスフロー
 
-![[図1 Launchingサービス有効化]](http://static.toastoven.net/prod_launching/ja/overview_serviceflow.png)
+![[図1 Launchingサービス有効化]](http://static.toastoven.net/prod_launching/21.07.13/ja/overview_serviceflow.png)

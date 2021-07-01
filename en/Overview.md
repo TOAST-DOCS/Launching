@@ -32,4 +32,4 @@ Terms as follows are used for the Launching Service:
 
 ## Service Flow 
 
-![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/prod_launching/en/overview_serviceflow.png)
+![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/prod_launching/21.07.13/en/overview_serviceflow.png)

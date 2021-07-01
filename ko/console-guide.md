@@ -8,7 +8,7 @@
 
 Console 화면의 **설정 정보** 탭에서 현재 Launching 정보를 조회할 수 있습니다.
 
-![console_configuration_00](https://static.toastoven.net/prod_launching/ko/console_configuration_00.png)
+![console_configuration_00](https://static.toastoven.net/prod_launching/21.07.13/ko/console_configuration_00.png)
 
 > [참고]
 > Launching 서비스를 사용하면 위 그림과 같이 기본으로 템플릿 데이터를 제공합니다.
@@ -17,7 +17,7 @@ Console 화면의 **설정 정보** 탭에서 현재 Launching 정보를 조회�
 ### 폴더 및 키 선택과 변경
 
 Launching 정보의 왼쪽 탐색 창에서 폴더나 키를 선택하면 오른쪽에 해당 폴더와 키 정보가 나타납니다. 선택된 폴더나 키의 이름과 설명을 변경한 후, **확인** 버튼을 클릭하면 해당 정보가 변경됩니다.
-![console_configuration_01](https://static.toastoven.net/prod_launching/ko/console_configuration_01.png)
+![console_configuration_01](https://static.toastoven.net/prod_launching/21.07.13/ko/console_configuration_01.png)
 
 > [참고]
 > **확인** 버튼은 Console 내부적으로 변경 사항을 반영한 것으로, 수정된 사항을 서버에 반영하려면 **배포** 탭에서 배포해야 합니다.
@@ -29,7 +29,7 @@ Launching 정보의 왼쪽 탐색 창에서 폴더나 키를 선택하면 오른
 
 키를 선택하면 나타나는 오른쪽의 키 정보에서 형식을 변경할 수 있습니다. 배열 형식으로 변경하면 해당 키에서 원하는 문자열 형식의 값을 추가하거나 삭제할 수 있습니다.
 
-![console_configuration_02](https://static.toastoven.net/prod_launching/ko/console_configuration_02.png)
+![console_configuration_02](https://static.toastoven.net/prod_launching/21.07.13/ko/console_configuration_02.png)
 
 ### 폴더 및 키 작업
 
@@ -37,13 +37,13 @@ Launching 정보의 왼쪽 탐색 창에서 폴더나 키를 선택하면 오른
 
 Launching 정보의 왼쪽 탐색 창에서 폴더를 선택하고 마우스 오른쪽 버튼을 클릭하면 나타나는 메뉴에서 폴더 및 키를 추가하거나, 왼쪽 탐색 창 위의 **폴더 추가/키 추가** 버튼을 클릭해 폴더 및 키를 추가할 수 있습니다.
 
-![console_configuration_03](https://static.toastoven.net/prod_launching/ko/console_configuration_03.png)
+![console_configuration_03](https://static.toastoven.net/prod_launching/21.07.13/ko/console_configuration_03.png)
 
 #### 복사, 붙여넣기 및 삭제
 
 Launching 정보의 왼쪽 탐색 창에서 폴더 또는 키를 선택한 후 나타나는 메뉴에서 **복사/삭제/붙여넣기** 버튼을 클릭해 원하는 작업을 할 수 있습니다.
 
-![console_configuration_04](https://static.toastoven.net/prod_launching/ko/console_configuration_04.png)
+![console_configuration_04](https://static.toastoven.net/prod_launching/21.07.13/ko/console_configuration_04.png)
 
 > [참고]
 > 폴더를 삭제하면 해당 폴더에 속한 모든 하위 폴더 및 키가 삭제됩니다.
@@ -52,7 +52,7 @@ Launching 정보의 왼쪽 탐색 창에서 폴더 또는 키를 선택한 후 �
 
 **로직** 탭을 클릭하면, 등록된 Launching 정보를 변경하기 위한 서버 로직 정보를 확인할 수 있습니다. 로직은 고정된 Launching 정보를 동적으로 변경하기 위한 비즈니스 로직을 의미하며, 서버에서 구동되기 때문에 모바일 앱의 업데이트 없이 변경된 Launching 정보를 얻을 수 있습니다.
 
-![console_logic_00](https://static.toastoven.net/prod_launching/ko/console_logic_00.png)
+![console_logic_00](https://static.toastoven.net/prod_launching/21.07.13/ko/console_logic_00.png)
 
 ### 로직 추가
 
@@ -65,7 +65,7 @@ Launching 정보의 왼쪽 탐색 창에서 폴더 또는 키를 선택한 후 �
 
 **적용 기간**에서 로직이 적용될 시간을 설정할 수 있으며, 종료 시각을 설정하지 않고 로직에 계속 적용되게 할 수도 있습니다.
 
-![console_logic_01](https://static.toastoven.net/prod_launching/ko/console_logic_01.png)
+![console_logic_01](https://static.toastoven.net/prod_launching/21.07.13/ko/console_logic_01.png)
 
 > [참고]
 > Launching 정보에서 결과로 지정한 키가 없을 때는 새롭게 추가하고, 아니면 기존 정보를 덮어쓰게 됩니다.
@@ -77,7 +77,7 @@ Launching 정보의 왼쪽 탐색 창에서 폴더 또는 키를 선택한 후 �
 
 등록된 로직을 클릭하면 해당 로직을 수정할 수 있습니다.
 
-![console_logic_02](https://static.toastoven.net/prod_launching/ko/console_logic_02.png)
+![console_logic_02](https://static.toastoven.net/prod_launching/21.07.13/ko/console_logic_02.png)
 
 #### 로직 실행 / 정지
 
@@ -96,7 +96,7 @@ Launching 정보를 서버에 배포하기 전에 로직을 테스트할 수 있
 
 여러 개의 파라미터 전달을 테스트할 때는, 파라미터 가장 오른쪽의 **+** 버튼을 클릭해 새로운 파라미터를 등록할 수 있습니다.
 
-![console_logic_03](https://static.toastoven.net/prod_launching/ko/console_logic_03.png)
+![console_logic_03](https://static.toastoven.net/prod_launching/21.07.13/ko/console_logic_03.png)
 
 예를 들어 그림과 같이 로직을 등록한 후 테스트를 진행하면 로직 결과에서 테스트 결과를 확인할 수 있습니다.
 
@@ -111,7 +111,7 @@ Launching 정보를 서버에 배포하기 전에 로직을 테스트할 수 있
 
 다음 그림과 같이 서브 키를 [launching.server]로 지정하면 [launching.server]에 있는 데이터만 가져올 수 있습니다.
 
-![console_logic_04](https://static.toastoven.net/prod_launching/ko/console_logic_04.png)
+![console_logic_04](https://static.toastoven.net/prod_launching/21.07.13/ko/console_logic_04.png)
 
 > [주의]
 > 그림처럼 서브 키도 GET 파라미터로 지정합니다. "subKey"를 키로 설정한 GET 파라미터는 서브 키로 인식합니다.
@@ -123,13 +123,13 @@ Launching 정보를 서버에 배포하기 전에 로직을 테스트할 수 있
 
 다음 그림과 같이 로직이 등록되어 있다고 가정하겠습니다.
 
-![console_logic_05](https://static.toastoven.net/prod_launching/ko/console_logic_05.png)
+![console_logic_05](https://static.toastoven.net/prod_launching/21.07.13/ko/console_logic_05.png)
 
 이런 경우 서브 키를 지정하지 않으면 로직이 적용되지 않습니다.
 
 그러나 서브 키 [launching.server]를 지정해 일부 데이터만 가져올 경우, 로직 조건 "$.cds === 'TEST'"를 만족하게 되어, "$.ip = '127.0.0.1'"에 의해 값이 변경됩니다.
 
-![console_logic_06](https://static.toastoven.net/prod_launching/ko/console_logic_06.png)
+![console_logic_06](https://static.toastoven.net/prod_launching/21.07.13/ko/console_logic_06.png)
 
 이처럼 서브 키 및 키 패턴을 사용해 Launching 정보를 유동적으로 변경할 수 있습니다.
 
@@ -157,7 +157,7 @@ Launching 정보를 서버에 배포하기 전에 로직을 테스트할 수 있
 **설정 정보** 및 **로직** 탭에서 수정한 사항을 서버에 반영하려면 **배포** 탭에서 배포를 진행해야 합니다.
 **배포** 탭에서는 배포하기 전 그림과 같이 Launching 정보 및 로직, 설명의 수정 사항을 확인할 수 있습니다.
 
-![console_deploy_00](https://static.toastoven.net/prod_launching/ko/console_deploy_00.png)
+![console_deploy_00](https://static.toastoven.net/prod_launching/21.07.13/ko/console_deploy_00.png)
 
 **배포** 버튼을 클릭해 배포를 진행하면 서버에 반영되어 모바일 앱에서 변경된 Launching 정보를 가져가게 됩니다.
 **초기화** 버튼을 클릭해 Console에서 수정한 내역을 다시 되돌릴 수 있습니다.
@@ -166,7 +166,7 @@ Launching 정보를 서버에 배포하기 전에 로직을 테스트할 수 있
 
 ### 백업 내역 확인
 
-![console_deploy_01](https://static.toastoven.net/prod_launching/ko/console_deploy_01.png)
+![console_deploy_01](https://static.toastoven.net/prod_launching/21.07.13/ko/console_deploy_01.png)
 
 하단 백업 내역에서 현재까지 백업된 내역을 확인할 수 있습니다.
 
