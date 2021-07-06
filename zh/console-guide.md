@@ -8,7 +8,7 @@ Launching data for a mobile app can be configured as follows:
 
 Current launching information can be queried on the **Configuration Information** tab on a console. 
 
-![console_configuration_00](https://static.toastoven.net/prod_launching/en/console_configuration_00.png)
+![console_configuration_00](https://static.toastoven.net/prod_launching/21.07.13/en/console_configuration_00.png)
 
 > [Note]
 > With the Launching Service, default template data are provided like the above.   
@@ -17,7 +17,7 @@ Current launching information can be queried on the **Configuration Information*
 ### Select/Change Folders and Keys 
 
 Select a folder or key in the search menu on the left to find information on the right. Change name or description of the selected folder or key, and click **Confirm**, then the information is changed.   
-![console_configuration_01](https://static.toastoven.net/prod_launching/en/console_configuration_01.png)
+![console_configuration_01](https://static.toastoven.net/prod_launching/21.07.13/en/console_configuration_01.png)
 
 > [Note]
 > The **Confirm** button applies changes in the console only; to apply such changes in the server, it is required to deploy on the **Deploy** tab.  
@@ -29,7 +29,7 @@ Select a folder or key in the search menu on the left to find information on the
 
 Key formats can be changed, on the key information that shows at the click of the key. By changing it into the drop-down format, values of the character string format of choice may be added or deleted.  
 
-![console_configuration_02](https://static.toastoven.net/prod_launching/en/console_configuration_02.png)
+![console_configuration_02](https://static.toastoven.net/prod_launching/21.07.13/en/console_configuration_02.png)
 
 ### Folders and Keys 
 
@@ -37,13 +37,13 @@ Key formats can be changed, on the key information that shows at the click of th
 
 You may add folders or keys, by selecting a folder from the search menu on the left and clicking on the right; or, at the click of **Add Folders/Keys** on top-left of the search menu.  
 
-![console_configuration_03](https://static.toastoven.net/prod_launching/en/console_configuration_03.png)
+![console_configuration_03](https://static.toastoven.net/prod_launching/21.07.13/en/console_configuration_03.png)
 
 #### Copying, Pasting, and Deleting 
 
 Select a folder or key from the search menu on the left, and click **Copy/Delete/Paste** to suit your needs. 
 
-![console_configuration_04](https://static.toastoven.net/prod_launching/en/console_configuration_04.png)
+![console_configuration_04](https://static.toastoven.net/prod_launching/21.07.13/en/console_configuration_04.png)
 
 > [Note]
 > If a folder is deleted, all its lower-level folders and keys are deleted altogether.
@@ -52,7 +52,7 @@ Select a folder or key from the search menu on the left, and click **Copy/Delete
 
 Server logic information is available at the click of the **Logic** tab, so as to change registered launching information. Logic refer to a business logic to dynamically change fixed launching information, and as it operates in the server, changed launching information becomes available without app updates.  
 
-![console_logic_00](https://static.toastoven.net/prod_launching/en/console_logic_00.png)
+![console_logic_00](https://static.toastoven.net/prod_launching/21.07.13/en/console_logic_00.png)
 
 ### Adding 
 
@@ -65,7 +65,7 @@ Results, if logic conditions are met, regard to changing launching information, 
 
 Period of logic application can be configured in **Period of Application**, and you can even make it applied continuously to logic, without configuring the closing time. 
 
-![console_logic_01](https://static.toastoven.net/prod_launching/en/console_logic_01.png)
+![console_logic_01](https://static.toastoven.net/prod_launching/21.07.13/en/console_logic_01.png)
 
 > [Note]
 > If there is no key specified as result in the launching information, add one; otherwise, existing information is overwritten.
@@ -77,7 +77,7 @@ Period of logic application can be configured in **Period of Application**, and 
 
 Click a registered logic and modify. 
 
-![console_logic_02](https://static.toastoven.net/prod_launching/en/console_logic_02.png)
+![console_logic_02](https://static.toastoven.net/prod_launching/21.07.13/en/console_logic_02.png)
 
 #### Execute/Suspend  
 
@@ -96,7 +96,7 @@ You may test a logic before its launching information is deployed to server. Con
 
 To test delivery of many parameters, click + on the far right of Parameters, and register new parameters. 
 
-![console_logic_03](https://static.toastoven.net/prod_launching/en/console_logic_03.png)
+![console_logic_03](https://static.toastoven.net/prod_launching/21.07.13/en/console_logic_03.png)
 
 For instance, register your logic like the above and test, then Logic Result shows test results. 
 
@@ -111,7 +111,7 @@ Subkeys start with "launching" and are combined with ".", and they can import pa
 
 With [launching.server] specified as subkey, the [launching.server] data only can be imported. 
 
-![console_logic_04](https://static.toastoven.net/prod_launching/en/console_logic_04.png)
+![console_logic_04](https://static.toastoven.net/prod_launching/21.07.13/en/console_logic_04.png)
 
 > [Warning]
 > Subkeys are specified as GET parameters, like the above. Get parameters that have "subkey" as key are considered as subkeys. 
@@ -123,13 +123,13 @@ On the route of launching information, which is the final delivery result by usi
 
 Let's assume the logic is registered like below: 
 
-![console_logic_05](https://static.toastoven.net/prod_launching/en/console_logic_05.png)
+![console_logic_05](https://static.toastoven.net/prod_launching/21.07.13/en/console_logic_05.png)
 
 In this case, unless a subkey is specified, logic application is not available. 
 
 However, with [launching.server] specified as subkey to import partial data only, the logic condition ".$cds === 'TEST'" is satisfied, and value is changed due to ".ip = '127.0.0.1'". 
 
-![console_logic_06](https://static.toastoven.net/prod_launching/en/console_logic_06.png)
+![console_logic_06](https://static.toastoven.net/prod_launching/21.07.13/en/console_logic_06.png)
 
 As such, you can use subkeys and key patterns to flexibly change launching information. 
 
@@ -157,7 +157,7 @@ Or, copy JSON-format data from the **Copy in JSON-Format** menu.
 To apply modification made on the **Configuration Information** and **Logic** tab to server, it must be deployed in the **Deploy** tab. 
 Before deployment, you can find, on the **Deploy** tab, launching information and logic, as well as modified description like below. 
 
-![console_deploy_00](https://static.toastoven.net/prod_launching/en/console_deploy_00.png)
+![console_deploy_00](https://static.toastoven.net/prod_launching/21.07.13/en/console_deploy_00.png)
 
 Click **Deploy**, and it is applied to server, with changed launching information from the mobile app. You may click **Initialize** to revert what is modified on console.   
 
@@ -165,7 +165,7 @@ With deployment, launching information and logic are backed up, in such states t
 
 ### Check Backup History 
 
-![console_deploy_01](https://static.toastoven.net/prod_launching/en/console_deploy_01.png)
+![console_deploy_01](https://static.toastoven.net/prod_launching/21.07.13/en/console_deploy_01.png)
 
 Backup history is available at the bottom. 
 
