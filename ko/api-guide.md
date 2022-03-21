@@ -43,7 +43,7 @@ Console을 사용하여 설정한 Launching 정보를 조회할 수 있는 방�
 [Method, URI]
 
 ```
-GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/{appKey}/configurations
+GET https://lnc.api.nhncloudservice.com/launching/v3.0/appkeys/{appKey}/configurations
 ```
 
 [Path Variable]
@@ -67,7 +67,7 @@ GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/{appKey}/configuratio
 [Request Sample - 00]
 
 ```
-GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
+GET https://lnc.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
 ```
 
 [Request Sample - 00 : Response]
@@ -108,7 +108,7 @@ GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/conf
 [Request Sample - 01]
 
 ```
-GET https://api-lnc.cloud.toast.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
+GET https://lnc.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
 ```
 
 [Request Sample - 01 : Response]
