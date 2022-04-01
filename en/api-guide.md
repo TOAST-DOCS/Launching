@@ -45,7 +45,7 @@ Querying configured launching data on a console is as follows:
 [Method, URI]
 
 ```
-GET https://lnc.api.nhncloudservice.com/launching/v3.0/appkeys/{appKey}/configurations
+GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/{appKey}/configurations
 ```
 
 [Path Variable]
@@ -69,7 +69,7 @@ GET https://lnc.api.nhncloudservice.com/launching/v3.0/appkeys/{appKey}/configur
 [Request Sample - 00]
 
 ```
-GET https://lnc.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
+GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
 ```
 
 [Request Sample - 00 : Response]
@@ -110,7 +110,7 @@ GET https://lnc.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/
 [Request Sample - 01]
 
 ```
-GET https://lnc.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
+GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
 ```
 
 [Request Sample - 01 : Response]
