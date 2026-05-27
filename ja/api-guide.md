@@ -1,76 +1,50 @@
 ## Game > Launching > APIガイド
 
-ConsoleでLaunchingサービスを有効にした後、モバイルアプリに必要なLaunching情報を設定すると、次のようなデータを照会できます。
+## Launching API共通情報
 
-## API共通情報
+### APIエンドポイント
 
-### リクエスト
+| リージョン  | エンドポイント                                   |
+|--------|-------------------------------------------|
+| Global | https://launching.api.nhncloudservice.com |
 
-* APIを呼び出すには、LaunchingサービスのAppKeyが必要です。
-* AppKeyは、Consoleメニュー上部にある**URL & AppKey**で確認できます。
+### 認証及び権限
 
-### レスポンス
+Launching APIを使用するには、Appkeyが必要です。Appkeyは、API呼び出し時にリクエストURLに含めて特定のリソースを指定し、識別するために使用されます。
 
-* すべてのレスポンス本文には、次のようなheaderを含めます。詳細なレスポンス結果は、エラーコードを参照してください。
-
-[成功レスポンス本文]
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "Success"
-    }
-}
-```
-
-[失敗レスポンス本文]
-```json
-{
-    "header": {
-        "isSuccessful": false,
-        "resultCode": 90003,
-        "resultMessage": "Failed to verify appkey. 'EyJ6IEGKv1dpDVCHc'"
-    }
-}
-```
-
+Appkeyの確認及び使用に関する詳細は、[Appkey](/nhncloud/ja/public-api/appkey)を参照してください。
 
 ## Launchingデータ照会
 
-Consoleを使用して設定したLaunching情報を照会する方法です。
-
-[Method, URI]
-
 ```
-GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/{appKey}/configurations
+GET /launching/v3.0/appkeys/{appKey}/configurations
 ```
 
-[Path Variable]
+### リクエスト
 
-| Name     | Type    | Value                   |
-| ------ | ------ | -------------------- |
-| appkey | String | LaunchingサービスAppKey |
+| 名前     | 種類    | 形式     | 必須 | 説明                                                      |
+|--------|-------|--------|----|---------------------------------------------------------|
+| appKey | URL   | String | O  | LaunchingサービスのAppkey                                    |
+| subKey | Query | String | X  | Launching情報から一部のデータのみを取得するために使用するキー</br>"launching."で開始 |
 
-[Request Parameter]
+### レスポンス
 
-| Name     | Type    | Required | Value | Note |
-| ------ | ------ | --- |-------------------- | --- |
-| subKey | String | Optional | サブキー | "launching."で開始 |
+| 名前        | 種類   | 形式     | 説明          |
+|-----------|------|--------|-------------|
+| launching | Body | Object | Launching情報 |
 
-* subKeyを通してLaunching情報から一部のデータのみを取得できます。
-    * subKeyは"launching."で始まる必要があります。
-* subKey以外のすべてのGETパラメータは一般変数として扱い、ロジック条件に使用できます。
+### 例
 
----
+<details><summary>全体照会</summary>
+<p>
 
-[Request Sample - 00]
+[リクエスト]
 
 ```
-GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
+GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
 ```
 
-[Request Sample - 00 : Response]
+[レスポンス]
 
 ```json
 {
@@ -105,13 +79,19 @@ GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1p
 }
 ```
 
-[Request Sample - 01]
+</p>
+</details>
+
+<details><summary>subKeyを使用した照会</summary>
+<p>
+
+[リクエスト]
 
 ```
-GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
+GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
 ```
 
-[Request Sample - 01 : Response]
+[レスポンス]
 
 ```json
 {
@@ -126,3 +106,6 @@ GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1p
     }
 }
 ```
+
+</p>
+</details>
