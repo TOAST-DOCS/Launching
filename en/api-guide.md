@@ -1,78 +1,50 @@
 ## Game > Launching > API Guide
 
-Enable Launching Service on console and configure required launching information for a mobile app, and data as follows can be queried. 
+## Launching API Common Information
 
-## Common API Information 
+### API Endpoint
+
+| Region | Endpoint                                  |
+|--------|-------------------------------------------|
+| Global | https://launching.api.nhncloudservice.com |
+
+### Authentication and Authorization
+
+Appkey is required to use the Launching API. The Appkey is included in the request URL to identify and specify a particular resource when making API calls.
+
+For more information on checking and using Appkeys, please refer to the [Appkey](/nhncloud/en/public-api/appkey).
+
+## Query Launching Data
+
+```
+GET /launching/v3.0/appkeys/{appKey}/configurations
+```
 
 ### Request
 
-* To call APIs, an Appkey of the launching service is required.   를
-* You can find AppKey from **URL & Appkey** on top of the console menu. 
+| Name   | Type  | Format | Required | Description                                                                                     |
+|--------|-------|--------|----------|-------------------------------------------------------------------------------------------------|
+| appKey | URL   | String | O        | Launching Service Appkey                                                                        |
+| subKey | Query | String | X        | Key used to retrieve only specific data from Launching information</br>Starts with "launching." |
 
-### Response 
+### Response
 
-* Each response body includes a header as below. For more response results, see Error Codes. 
+| Name      | Type | Format | Description           |
+|-----------|------|--------|-----------------------|
+| launching | Body | Object | Launching information |
 
-[Successful Response Body]
+### Examples
 
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "Success"
-    }
-}
-```
+<details><summary>Query All</summary>
+<p>
 
-[Failed Response Body]
-
-```json
-{
-    "header": {
-        "isSuccessful": false,
-        "resultCode": 90003,
-        "resultMessage": "Failed to verify appkey. 'EyJ6IEGKv1dpDVCHc'"
-    }
-}
-```
-
-
-## Query Launching Data 
-
-Querying configured launching data on a console is as follows:  
-
-[Method, URI]
+[Request]
 
 ```
-GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/{appKey}/configurations
+GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
 ```
 
-[Path Variable]
-
-| Name     | Type    | Value                   |
-| ------ | ------ | -------------------- |
-| Appkey | String | Appkey for Launching Service |
-
-[Request Parameter]
-
-| Name     | Type    | Required | Value | Note |
-| ------ | ------ | --- |-------------------- | --- |
-| SubKey | String | Optional | Subkey | Start with "launching." |
-
-* Only partial launching data can be imported with a subKey. 
-    * The subKey must start with "launching.".
-* All GET parameters, other than Subkey, are considered as general parameters and can be applied as part of the logic conditions.  
-
----
-
-[Request Sample - 00]
-
-```
-GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
-```
-
-[Request Sample - 00 : Response]
+[Response]
 
 ```json
 {
@@ -107,13 +79,19 @@ GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1p
 }
 ```
 
-[Request Sample - 01]
+</p>
+</details>
+
+<details><summary>Query Using subKey</summary>
+<p>
+
+[Request]
 
 ```
-GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
+GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
 ```
 
-[Request Sample - 01 : Response]
+[Response]
 
 ```json
 {
@@ -128,3 +106,6 @@ GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1p
     }
 }
 ```
+
+</p>
+</details>

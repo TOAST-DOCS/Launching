@@ -1,76 +1,50 @@
 ## Game > Launching > API 가이드
 
-Console에서 Launching 서비스를 활성화한 후, 모바일 앱에 필요한 Launching 정보를 설정하면 다음과 같은 데이터를 조회할 수 있습니다.
+## Launching API 공통 정보
 
-## API 공통 정보
+### API 엔드포인트
 
-### 요청
+| 리전     | 엔드포인트                                     |
+|--------|-------------------------------------------|
+| Global | https://launching.api.nhncloudservice.com |
 
-* API를 호출하려면 Launching 서비스의 AppKey가 필요합니다.
-* AppKey는 Console 메뉴 상단의 **URL & AppKey**에서 확인할 수 있습니다.
+### 인증 및 권한
 
-### 응답
+Launching API를 사용하려면 Appkey가 필요합니다. Appkey는 API 호출 시 요청 URL에 포함하여 특정 리소스를 가리키고 식별하는 데 사용됩니다.
 
-* 모든 응답 본문에는 다음과 같은 header를 포함합니다. 자세한 응답 결과는 오류 코드를 참고합니다.
-
-[성공 응답 본문]
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "Success"
-    }
-}
-```
-
-[실패 응답 본문]
-```json
-{
-    "header": {
-        "isSuccessful": false,
-        "resultCode": 90003,
-        "resultMessage": "Failed to verify appkey. 'EyJ6IEGKv1dpDVCHc'"
-    }
-}
-```
-
+Appkey 확인 및 사용에 대한 자세한 내용은 [Appkey](/nhncloud/ko/public-api/appkey)를 참고하세요.
 
 ## Launching 데이터 조회
 
-Console을 사용하여 설정한 Launching 정보를 조회할 수 있는 방법입니다.
-
-[Method, URI]
-
 ```
-GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/{appKey}/configurations
+GET /launching/v3.0/appkeys/{appKey}/configurations
 ```
 
-[Path Variable]
+### 요청
 
-| Name     | Type    | Value                   |
-| ------ | ------ | -------------------- |
-| appkey | String | Launching 서비스 AppKey |
+| 이름     | 종류    | 형식     | 필수 | 설명                                                          |
+|--------|-------|--------|----|-------------------------------------------------------------|
+| appKey | URL   | String | O  | Launching 서비스 Appkey                                        |
+| subKey | Query | String | X  | Launching 정보에서 일부 데이터만 가져오기 위해 사용하는 키</br>"launching."으로 시작 |
 
-[Request Parameter]
+### 응답
 
-| Name     | Type    | Required | Value | Note |
-| ------ | ------ | --- |-------------------- | --- |
-| subKey | String | Optional | 서브 키 | "launching."으로 시작 |
+| 이름        | 종류   | 형식     | 설명           |
+|-----------|------|--------|--------------|
+| launching | Body | Object | Launching 정보 |
 
-* subKey를 통해 Launching 정보에서 일부 데이터만 가져올 수 있습니다.
-    * subKey는 "launching."으로 시작해야 합니다.
-* subKey 외의 모든 GET 파라미터는 일반 변수로 취급하여 로직 조건에 사용할 수 있습니다.
+### 예시
 
----
+<details><summary>전체 조회</summary>
+<p>
 
-[Request Sample - 00]
+[요청]
 
 ```
-GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
+GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
 ```
 
-[Request Sample - 00 : Response]
+[응답]
 
 ```json
 {
@@ -105,13 +79,19 @@ GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1p
 }
 ```
 
-[Request Sample - 01]
+</p>
+</details>
+
+<details><summary>subKey를 사용한 조회</summary>
+<p>
+
+[요청]
 
 ```
-GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
+GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.server
 ```
 
-[Request Sample - 01 : Response]
+[응답]
 
 ```json
 {
@@ -126,3 +106,6 @@ GET https://launching.api.nhncloudservice.com/launching/v3.0/appkeys/EyJ6IEGKv1p
     }
 }
 ```
+
+</p>
+</details>
