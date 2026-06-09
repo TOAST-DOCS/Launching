@@ -36,7 +36,6 @@ GET /launching/v3.0/appkeys/{appKey}/configurations
 ### 例
 
 <details><summary>全体照会</summary>
-<p>
 
 [リクエスト]
 
@@ -79,11 +78,9 @@ GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
 }
 ```
 
-</p>
 </details>
 
 <details><summary>subKeyを使用した照会</summary>
-<p>
 
 [リクエスト]
 
@@ -107,5 +104,4 @@ GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.ser
 }
 ```
 
-</p>
 </details>
