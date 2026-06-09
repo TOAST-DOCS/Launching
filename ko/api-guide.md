@@ -36,7 +36,6 @@ GET /launching/v3.0/appkeys/{appKey}/configurations
 ### 예시
 
 <details><summary>전체 조회</summary>
-<p>
 
 [요청]
 
@@ -79,11 +78,9 @@ GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
 }
 ```
 
-</p>
 </details>
 
 <details><summary>subKey를 사용한 조회</summary>
-<p>
 
 [요청]
 
@@ -107,5 +104,4 @@ GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.ser
 }
 ```
 
-</p>
 </details>
