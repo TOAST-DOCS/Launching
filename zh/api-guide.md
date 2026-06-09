@@ -36,7 +36,6 @@ GET /launching/v3.0/appkeys/{appKey}/configurations
 ### Examples
 
 <details><summary>Query All</summary>
-<p>
 
 [Request]
 
@@ -79,11 +78,9 @@ GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations
 }
 ```
 
-</p>
 </details>
 
 <details><summary>Query Using subKey</summary>
-<p>
 
 [Request]
 
@@ -107,5 +104,4 @@ GET /launching/v3.0/appkeys/EyJ6IEGKv1pDVCHc/configurations?subKey=launching.ser
 }
 ```
 
-</p>
 </details>
