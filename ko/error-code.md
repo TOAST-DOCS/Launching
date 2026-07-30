@@ -1,5 +1,9 @@
-## Game > Launching > 오류 코드
-## 오류 코드
+<!-- pre-align:aligned sig=f8ee3044a402 -->
+
+<a id="game-launching-error-codes"></a>
+## Game > Launching > 오류 코드 { #game-launching-error-codes }
+<a id="error-codes"></a>
+## 오류 코드 { #error-codes }
 
 오류 코드는 Response body(응답 본문)의 header에 있는 resultCode 및 resultMessage의 의미를 설명합니다.
 

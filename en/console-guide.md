@@ -1,10 +1,15 @@
-## Game > Launching > Console Guide 
+<!-- pre-align:aligned sig=429273173420 -->
 
-## Launching Data Management 
+<a id="game-launching-console-guide"></a>
+## Game > Launching > Console Guide { #game-launching-console-guide }
+
+<a id="launching-data-management"></a>
+## Launching Data Management { #launching-data-management }
 
 Launching data for a mobile app can be configured as follows:  
 
-## Configuration Information
+<a id="configuration-information"></a>
+## Configuration Information { #configuration-information }
 
 Current launching information can be queried on the **Configuration Information** tab on a console. 
 
@@ -14,7 +19,8 @@ Current launching information can be queried on the **Configuration Information*
 > With the Launching Service, default template data are provided like the above.   
 > (Actual template data may be different.)
 
-### Select/Change Folders and Keys 
+<a id="selectchange-folders-and-keys"></a>
+### Select/Change Folders and Keys { #selectchange-folders-and-keys }
 
 Select a folder or key in the search menu on the left to find information on the right. Change name or description of the selected folder or key, and click **Confirm**, then the information is changed.   
 ![console_configuration_01](https://static.toastoven.net/prod_launching/21.07.13/en/console_configuration_01.png)
@@ -25,20 +31,24 @@ Select a folder or key in the search menu on the left to find information on the
 > [Note]
 > Same key names may exist in different folders, but no two same key names exist under a single folder. For example, there is only one key named 'ip' in the server folder, but the same 'ip' key may exist in another folder.     
 
-### Change Key Formats 
+<a id="change-key-formats"></a>
+### Change Key Formats { #change-key-formats }
 
 Key formats can be changed, on the key information that shows at the click of the key. By changing it into the drop-down format, values of the character string format of choice may be added or deleted.  
 
 ![console_configuration_02](https://static.toastoven.net/prod_launching/21.07.13/en/console_configuration_02.png)
 
-### Folders and Keys 
+<a id="folders-and-keys"></a>
+### Folders and Keys { #folders-and-keys }
 
+<a id="folders-and-keys-adding"></a>
 #### Adding
 
 You may add folders or keys, by selecting a folder from the search menu on the left and clicking on the right; or, at the click of **Add Folders/Keys** on top-left of the search menu.  
 
 ![console_configuration_03](https://static.toastoven.net/prod_launching/21.07.13/en/console_configuration_03.png)
 
+<a id="folders-and-keys-copying-pasting-and-deleting"></a>
 #### Copying, Pasting, and Deleting 
 
 Select a folder or key from the search menu on the left, and click **Copy/Delete/Paste** to suit your needs. 
@@ -48,13 +58,15 @@ Select a folder or key from the search menu on the left, and click **Copy/Delete
 > [Note]
 > If a folder is deleted, all its lower-level folders and keys are deleted altogether.
 
-## Logic
+<a id="logic"></a>
+## Logic { #logic }
 
 Server logic information is available at the click of the **Logic** tab, so as to change registered launching information. Logic refer to a business logic to dynamically change fixed launching information, and as it operates in the server, changed launching information becomes available without app updates.  
 
 ![console_logic_00](https://static.toastoven.net/prod_launching/21.07.13/en/console_logic_00.png)
 
-### Adding 
+<a id="adding"></a>
+### Adding { #adding }
 
 To add a server logic, the start and closing time of a logic operation, as well as conditions and results of logic application must be included. 
 
@@ -73,16 +85,19 @@ Period of logic application can be configured in **Period of Application**, and 
 > [Warning]
 > A logic cannot exceed 1KB. In addition, at least one logic result must be registered, with the key and value no larger than 255 bytes. 
 
-### Modifying 
+<a id="modifying"></a>
+### Modifying { #modifying }
 
 Click a registered logic and modify. 
 
 ![console_logic_02](https://static.toastoven.net/prod_launching/21.07.13/en/console_logic_02.png)
 
+<a id="modifying-executesuspend"></a>
 #### Execute/Suspend  
 
 Check a logic to suspend or execute from the list, and click **Execute/Suspend** to change its status. Logics under suspension are not available to change launching information. 
 
+<a id="modifying-delete"></a>
 #### Delete 
 
 Check a logic to delete from the list, and click **Delete** to delete it. 
@@ -90,7 +105,8 @@ Check a logic to delete from the list, and click **Delete** to delete it.
 > [Warning]
 > To apply all changes, including execution/suspension, deploy from the **Deploy** tab. 
 
-### Testing 
+<a id="testing"></a>
+### Testing { #testing }
 
 You may test a logic before its launching information is deployed to server. Configure application period for GET parameters, delivered to call launching information, as well as for the logic, and click **Test Logic** and confirm launching information in which the logic is applied.  
 
@@ -105,7 +121,8 @@ As you can see, if the parameter 'launching.server.cds', as part of a logic cond
 > [Note]
 > The yellow highlights refer to keys that are added or changed, with the logic and GET parameters applied on the origin launching information. 
 
-### Subkeys 
+<a id="subkeys"></a>
+### Subkeys { #subkeys }
 
 Subkeys start with "launching" and are combined with ".", and they can import partial data only from launching information. 
 
@@ -116,7 +133,8 @@ With [launching.server] specified as subkey, the [launching.server] data only ca
 > [Warning]
 > Subkeys are specified as GET parameters, like the above. Get parameters that have "subkey" as key are considered as subkeys. 
 
-### Key Patterns 
+<a id="key-patterns"></a>
+### Key Patterns { #key-patterns }
 
 Key patterns refer to special keys which start with "$" and can be applied in logic conditions and results. 
 On the route of launching information, which is the final delivery result by using the entire keys or subkeys, relative location can be specified. 
@@ -133,7 +151,8 @@ However, with [launching.server] specified as subkey to import partial data only
 
 As such, you can use subkeys and key patterns to flexibly change launching information. 
 
-## Import 
+<a id="import"></a>
+## Import { #import }
 
 You can import launching information and logic registered in Launching Service of another project, from the **Import** tab, or from JSON-format data which is copied with **Copy in JSON Format**.  
 
@@ -144,7 +163,8 @@ You may also import them from JSON-format data, from the **Load from JSON Format
 > [Note]
 > You can test, after **Import** and check launching information and logic in the **Configuration Information/Logic** tab. Import must be deployed on the **Deploy** tab so as to apply to server.  
 
-## Export 
+<a id="export"></a>
+## Export { #export }
 
 You can export launching information and logic to Launching Service of another project on the **Export** tab, or copy in the JSON-format data. 
 
@@ -152,7 +172,8 @@ Select another project, and click **Execute Export** to export launching informa
 
 Or, copy JSON-format data from the **Copy in JSON-Format** menu. 
 
-## Deploy 
+<a id="deploy"></a>
+## Deploy { #deploy }
 
 To apply modification made on the **Configuration Information** and **Logic** tab to server, it must be deployed in the **Deploy** tab. 
 Before deployment, you can find, on the **Deploy** tab, launching information and logic, as well as modified description like below. 
@@ -163,7 +184,8 @@ Click **Deploy**, and it is applied to server, with changed launching informatio
 
 With deployment, launching information and logic are backed up, in such states they are immediately before modified on console. Click **Deploy** and specify name to back up.   
 
-### Check Backup History 
+<a id="check-backup-history"></a>
+### Check Backup History { #check-backup-history }
 
 ![console_deploy_01](https://static.toastoven.net/prod_launching/21.07.13/en/console_deploy_01.png)
 

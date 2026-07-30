@@ -1,8 +1,12 @@
-## Game > Launching > 概要 
+<!-- pre-align:aligned sig=94329fcaaed4 -->
+
+<a id="game-launching-overview"></a>
+## Game > Launching > 概要 { #game-launching-overview }
 
 モバイルアプリを実行するには、サーバー情報、告知事項URL、ダウンロードURLなど、多様な情報が必要です。そして、このようなモバイルアプリ関連情報が変更された時は、モバイルアプリを再度配布する必要があります。  Launchingサービスを使用すると、モバイルアプリを初めて実行する時に必要な情報をリアルタイムで反映でき、アプリ情報が変更されても再配布を行わずに運営できます。
 
-## 主な機能
+<a id="main-features"></a>
+## 主な機能 { #main-features }
 
 Launchingサービスでは、次のような機能を提供します。
 
@@ -18,7 +22,8 @@ Launchingサービスでは、次のような機能を提供します。
 * **ユーザーが設定した時間中、モバイルアプリにメッセージ告知可能**
 ユーザーが設定した時間中にのみメンテナンス日程およびイベントなどを告知でき、サービスメンテナンス中にはサービスを中断してメンテナンスメッセージを告知できます。
 
-## サービス用語
+<a id="glossary"></a>
+## サービス用語 { #glossary }
 
 Launchingサービスで使用する用語は次のとおりです。
 
@@ -30,6 +35,7 @@ Launchingサービスで使用する用語は次のとおりです。
 | サブキーSub Key | 全ローンチ情報から一部データのみを取得したい時に使用するキー。'launching.'で始まり、'.'で組み合わせる。 |
 | キーパターンKey Pattern | JSON形式設定情報ルートの相対的なキー。'$.'で始まり、'.'で組み合わせる。 |
 
-## サービスフロー
+<a id="service-flow"></a>
+## サービスフロー { #service-flow }
 
 ![[図1 Launchingサービス有効化]](http://static.toastoven.net/prod_launching/21.07.13/ja/overview_serviceflow.png)

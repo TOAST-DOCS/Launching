@@ -1,10 +1,15 @@
-## Game > Launching > コンソール使用ガイド
+<!-- pre-align:aligned sig=429273173420 -->
 
-## Launchingデータ管理
+<a id="game-launching-console-guide"></a>
+## Game > Launching > コンソール使用ガイド { #game-launching-console-guide }
+
+<a id="launching-data-management"></a>
+## Launchingデータ管理 { #launching-data-management }
 
 モバイルアプリで使用するLaunchingデータの設定方法は、次のとおりです。
 
-## 設定情報
+<a id="configuration-information"></a>
+## 設定情報 { #configuration-information }
 
 Console画面の**設定情報**タブで現在のLaunching情報を照会できます。
 
@@ -14,7 +19,8 @@ Console画面の**設定情報**タブで現在のLaunching情報を照会でき
 > Launchingサービスを使用すると、上図のようにデフォルトでテンプレートデータを提供します。
 > (実際のテンプレートデータは図とは異なる場合があります。)
 
-### フォルダおよびキーの選択と変更
+<a id="selectchange-folders-and-keys"></a>
+### フォルダおよびキーの選択と変更 { #selectchange-folders-and-keys }
 
 Launching情報の左側にあるエクスプローラウィンドウでフォルダやキーを選択すると、右側に該当フォルダとキー情報が表示されます。選択されたフォルダやキーの名前と説明を変更した後、**確認**ボタンをクリックすると、該当情報が変更されます。
 ![console_configuration_01](https://static.toastoven.net/prod_launching/21.07.13/ja/console_configuration_01.png)
@@ -25,20 +31,24 @@ Launching情報の左側にあるエクスプローラウィンドウでフォ�
 > [参考]
 > 異なるフォルダにあるキー名は同じ場合がありますが、同じフォルダ内ではキー名は重複できません。例えば、serverフォルダに名前が'ip'のキーは1つだけ許可されますが、clientという別のフォルダでは同じ名前の'ip'キーがありえます。
 
-### キー形式の変更
+<a id="change-key-formats"></a>
+### キー形式の変更 { #change-key-formats }
 
 キーを選択すると、右側に表示されるキー情報から形式を変更できます。配列形式に変更すると、該当キーで任意の文字列形式の値を追加したり削除できます。
 
 ![console_configuration_02](https://static.toastoven.net/prod_launching/21.07.13/ja/console_configuration_02.png)
 
-### フォルダおよびキー作業
+<a id="folders-and-keys"></a>
+### フォルダおよびキー作業 { #folders-and-keys }
 
+<a id="folders-and-keys-adding"></a>
 #### 追加
 
 Launching情報の左側にあるエクスプローラウィンドウでフォルダを選択して右クリックすると現れるメニューで、フォルダおよびキーを追加したり、左側にあるエクスプローラウィンドウの上部にある**フォルダ追加/キー追加**ボタンをクリックしてフォルダおよびキーを追加できます。
 
 ![console_configuration_03](https://static.toastoven.net/prod_launching/21.07.13/ja/console_configuration_03.png)
 
+<a id="folders-and-keys-copying-pasting-and-deleting"></a>
 #### コピー、貼り付けおよび削除
 
 Launching情報の左側にあるエクスプローラウィンドウで、フォルダまたはキーを選択した後に現れるメニューで、**コピー/削除/貼り付け**ボタンをクリックして任意の作業を行うことができます。
@@ -48,13 +58,15 @@ Launching情報の左側にあるエクスプローラウィンドウで、フ�
 > [参考]
 > フォルダを削除すると、該当フォルダに属しているすべてのサブフォルダおよびキーが削除されます。
 
-## ロジック
+<a id="logic"></a>
+## ロジック { #logic }
 
 **ロジック**タブをクリックすると、登録されたLaunching情報を変更するためのサーバーロジック情報を確認できます。ロジックは固定されたLaunching情報を動的に変更するためのビジネスロジックを意味します。サーバーで動くため、モバイルアプリのアップデートをせずに変更されたLaunching情報を取得できます。
 
 ![console_logic_00](https://static.toastoven.net/prod_launching/21.07.13/ja/console_logic_00.png)
 
-### ロジックの追加
+<a id="adding"></a>
+### ロジックの追加 { #adding }
 
 サーバーロジックを追加するには、ロジックが動作する開始時刻および終了時刻、ロジックが適用される条件および結果を入力する必要があります。
 
@@ -73,16 +85,19 @@ Launching情報の左側にあるエクスプローラウィンドウで、フ�
 > [注意]
 > ロジックの条件は最大1KBを超えられません。また、ロジック結果は1つ以上登録する必要があり、ロジック結果で設定するキーと結果値は最大255バイトを超えられません。
 
-### ロジック修正
+<a id="modifying"></a>
+### ロジック修正 { #modifying }
 
 登録されたロジックをクリックすると、該当ロジックを修正できます。
 
 ![console_logic_02](https://static.toastoven.net/prod_launching/21.07.13/ja/console_logic_02.png)
 
+<a id="modifying-executesuspend"></a>
 #### ロジック実行 / 停止
 
 ロジックリストで停止または実行するロジックのチェックボックスを選択した後、上部にある**実行 / 停止**ボタンをクリックしてロジックの状態を変更できます。停止状態のロジックはLaunching情報を修正しません。
 
+<a id="modifying-delete"></a>
 #### ロジック削除
 
 ロジックリストから削除するロジックのチェックボックスを選択した後、上部にある**削除**ボタンをクリックしてロジックを削除できます。
@@ -90,7 +105,8 @@ Launching情報の左側にあるエクスプローラウィンドウで、フ�
 > [注意]
 > ロジック実行/停止を含むすべての変更事項をサーバーに反映するには、**配布**タブで配布する必要があります。
 
-### ロジックテスト
+<a id="testing"></a>
+### ロジックテスト { #testing }
 
 Launching情報をサーバーに配布する前にロジックをテストできます。Launching情報を呼び出す時、渡したGETパラメータとロジックの適用時刻を設定した後に**ロジックテスト**ボタンをクリックすると、下でロジックが適用されたLaunching情報をあらかじめ確認できます。
 
@@ -105,7 +121,8 @@ Launching情報をサーバーに配布する前にロジックをテストで�
 > [参考]
 > ロジックテスト結果で黄色で処理された部分は、実際の原本Launching情報からロジックおよびGETパラメータで演算して追加または変更されたキーを意味します。
 
-### サブキー
+<a id="subkeys"></a>
+### サブキー { #subkeys }
 
 サブキーは、"launching."で始まり"."で組み合わされるキーで、サブキーを使用するとLaunching情報から一部のデータのみ取得できます。
 
@@ -116,7 +133,8 @@ Launching情報をサーバーに配布する前にロジックをテストで�
 > [注意]
 > 図のようにサブキーもGETパラメータで指定します。"subKey"をキーに設定したGETパラメータは、サブキーとして認識します。
 
-### キーパターン
+<a id="key-patterns"></a>
+### キーパターン { #key-patterns }
 
 キーパターンは"$."で始まる特殊なキーで、ロジック条件および結果で使用できます。
 全体またはサブキーを使用して伝達された最終結果であるLaunching情報のルートで、相対的な位置を指定します。
@@ -133,7 +151,8 @@ Launching情報をサーバーに配布する前にロジックをテストで�
 
 このようにサブキーおよびキーパターンを使用して、Launching情報を流動的に変更できます。
 
-## インポート
+<a id="import"></a>
+## インポート { #import }
 
 **インポート**タブで、他のプロジェクトのLaunchingサービスに登録されたLaunching情報およびロジックをインポートしたり、**エクスポート**タブの**JSON形式でコピーする**で、コピーしたJSON形式のデータからインポートできます。
 
@@ -144,7 +163,8 @@ Launching情報をサーバーに配布する前にロジックをテストで�
 > [参考]
 > **インポート**を実行した後、**設定情報/ロジック**タブでLaunching情報およびロジックを確認してテストできます。インポートを実行すると、**配布**タブで配布を行った時にサーバーに反映されます。
 
-## エクスポート
+<a id="export"></a>
+## エクスポート { #export }
 
 **エクスポート**タブで、他のプロジェクトのLaunchingサービスにLaunching情報およびロジックをエクスポートしたり、JSON形式のデータにコピーできます。
 
@@ -152,7 +172,8 @@ Launching情報をサーバーに配布する前にロジックをテストで�
 
 **JSON形式でコピーする**メニューで、JSON形式のデータをコピーできます。
 
-## 配布
+<a id="deploy"></a>
+## 配布 { #deploy }
 
 **設定情報**および**ロジック**タブで修正した事項をサーバーに反映するには、**配布**タブで配布を行う必要があります。
 **配布**タブでは、配布する前に図のようにLaunching情報およびロジック、説明の修正事項を確認できます。
@@ -164,7 +185,8 @@ Launching情報をサーバーに配布する前にロジックをテストで�
 
 配布を行うと、Consoleで修正する直前のLaunching情報とロジックをバックアップします。**配布**ボタンをクリックしたら、バックアップする名前を指定する必要があります。
 
-### バックアップ履歴の確認
+<a id="check-backup-history"></a>
+### バックアップ履歴の確認 { #check-backup-history }
 
 ![console_deploy_01](https://static.toastoven.net/prod_launching/21.07.13/ja/console_deploy_01.png)
 

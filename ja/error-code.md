@@ -1,5 +1,9 @@
-## Game > Launching > エラーコード
-## エラーコード
+<!-- pre-align:aligned sig=f8ee3044a402 -->
+
+<a id="game-launching-error-codes"></a>
+## Game > Launching > エラーコード { #game-launching-error-codes }
+<a id="error-codes"></a>
+## エラーコード { #error-codes }
 
 Response body(レスポンス本文)のheaderにあるresultCodeおよびresultMessageの意味を説明します。
 
