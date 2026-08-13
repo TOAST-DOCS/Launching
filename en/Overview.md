@@ -1,8 +1,12 @@
-## Game > Launching > Overview  
+<!-- pre-align:aligned sig=94329fcaaed4 -->
+
+<a id="game-launching-overview"></a>
+## Game > Launching > Overview { #game-launching-overview }
 
 To execute a mobile app, a variety of information is needed, including server information, URL for Notice, and URL for Download, and changing any such information requires re-deployment of the app. However, with the Launching Service, information required for an initial app execution can be applied in real time, with no need of app redeployment, even if information is changed.   
 
-## Main Features 
+<a id="main-features"></a>
+## Main Features { #main-features }
 
 Launching provides the following features: 
 
@@ -18,7 +22,8 @@ Launching provides the following features:
 * **Announce messages on mobile app during user-configured period**
   Notices for maintenance schedule and events can be announced only during user-configured period; while maintenance is underway, maintenance messages can be posted with the service suspended.  
 
-## Glossary 
+<a id="glossary"></a>
+## Glossary { #glossary }
 
 Terms as follows are used for the Launching Service: 
 
@@ -30,6 +35,7 @@ Terms as follows are used for the Launching Service:
 | Subkey | A key to get only partial data out of the entire launching information: started with 'launching' and combined with '.'. |
 | Key Pattern | A relative key of JSON-format configuration information route: started with '$' and combined with '.'. |
 
-## Service Flow 
+<a id="service-flow"></a>
+## Service Flow { #service-flow }
 
 ![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/prod_launching/21.07.13/en/overview_serviceflow.png)

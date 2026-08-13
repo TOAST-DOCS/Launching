@@ -1,8 +1,12 @@
-## Common > Launching > Developer's Guide
+<!-- pre-align:aligned sig=df943cdccd6e -->
+
+<a id="common-launching-developers-guide"></a>
+## Common > Launching > Developer's Guide { #common-launching-developers-guide }
 
 Console에서 Launching 서비스를 활성화 한 후, 모바일 앱에 필요한 Launching 정보를 설정하였다면 다음과 같이 해당 데이터를 조회 할 수 있습니다.
 
-## Launching 데이터 조회
+<a id="launching"></a>
+## Launching 데이터 조회 { #launching }
 
 Console을 사용하여 설정한 Launching 정보를 조회할 수 있는 방법입니다.
 
@@ -68,7 +72,8 @@ Content-Type: application/json;charset=UTF-8
 > [참고]  
 > 요청 결과는 JSON 문자열입니다. 애플리케이션에서는 해당 문자열을 파싱하여 사용하면 됩니다.  
 
-## 에러 코드
+<a id="section-1"></a>
+## 에러 코드 { #section-1 }
 
 에러 코드는 HTTP Response Status 결과코드 값을 의미합니다.
 

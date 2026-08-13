@@ -1,5 +1,9 @@
-## Game > Launching > Error Codes 
-## Error Codes 
+<!-- pre-align:aligned sig=f8ee3044a402 -->
+
+<a id="game-launching-error-codes"></a>
+## Game > Launching > Error Codes { #game-launching-error-codes }
+<a id="error-codes"></a>
+## Error Codes { #error-codes }
 
 Error codes describe resultCodes and resultMessages at the header of the response body. 
 

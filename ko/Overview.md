@@ -1,8 +1,12 @@
-## Game > Launching > 개요 
+<!-- pre-align:aligned sig=94329fcaaed4 -->
+
+<a id="game-launching-overview"></a>
+## Game > Launching > 개요 { #game-launching-overview }
 
 모바일 앱을 실행하려면 서버 정보, 공지 사항 URL, 다운로드 URL 등 다양한 정보가 필요합니다. 그리고 이러한 모바일 앱 관련 정보가 변경되면 모바일 앱을 다시 배포해야 합니다.  Launching 서비스를 사용하면 모바일 앱을 처음 실행할 때 필요한 정보를 실시간으로 반영할 수 있어, 앱 정보가 변경되어도 다시 배포하지 않고 운영할 수 있습니다.
 
-## 주요 기능
+<a id="main-features"></a>
+## 주요 기능 { #main-features }
 
 Launching 서비스에서는 다음과 같은 기능을 제공합니다.
 
@@ -18,7 +22,8 @@ Launching 서비스에서는 다음과 같은 기능을 제공합니다.
 * **사용자가 설정한 시간 동안 모바일 앱에 메시지 공지 가능**
 사용자가 설정한 시간 동안에만 점검 일정 및 이벤트 등을 공지할 수 있으며, 서비스 점검 중에는 서비스를 중단하고 점검 메시지를 공지할 수 있습니다.
 
-## 서비스 용어
+<a id="glossary"></a>
+## 서비스 용어 { #glossary }
 
 Launching 서비스에서 사용하는 용어는 다음과 같습니다.
 
@@ -30,6 +35,7 @@ Launching 서비스에서 사용하는 용어는 다음과 같습니다.
 | 서브 키 Sub Key | 전체 론칭 정보에서 일부 데이터만을 얻고자 할 때 사용하는 키. 'launching.'으로 시작하며, '.'로 조합됨. |
 | 키 패턴 Key Pattern | JSON 형식 설정 정보 루트의 상대적인 키. '$.'로 시작하며, '.'로 조합됨. |
 
-## 서비스 흐름
+<a id="service-flow"></a>
+## 서비스 흐름 { #service-flow }
 
 ![[그림 1 Launching 서비스 활성화]](http://static.toastoven.net/prod_launching/21.07.13/ko/overview_serviceflow.png)

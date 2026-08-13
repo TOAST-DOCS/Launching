@@ -1,39 +1,49 @@
-## Game > Launching > API Guide
+<!-- pre-align:aligned sig=8c4ed6dd268d -->
 
-## Launching API Common Information
+<a id="game-launching-api-guide"></a>
+## Game > Launching > API Guide { #game-launching-api-guide }
 
-### API Endpoint
+<a id="launching-api-common-information"></a>
+## Launching API Common Information { #launching-api-common-information }
+
+<a id="api-endpoint"></a>
+### API Endpoint { #api-endpoint }
 
 | Region | Endpoint                                  |
 |--------|-------------------------------------------|
 | Global | https://launching.api.nhncloudservice.com |
 
-### Authentication and Authorization
+<a id="authentication-and-authorization"></a>
+### Authentication and Authorization { #authentication-and-authorization }
 
 Appkey is required to use the Launching API. The Appkey is included in the request URL to identify and specify a particular resource when making API calls.
 
 For more information on checking and using Appkeys, please refer to the [Appkey](/nhncloud/en/public-api/appkey).
 
-## Query Launching Data
+<a id="query-launching-data"></a>
+## Query Launching Data { #query-launching-data }
 
 ```
 GET /launching/v3.0/appkeys/{appKey}/configurations
 ```
 
-### Request
+<a id="request"></a>
+### Request { #request }
 
 | Name   | Type  | Format | Required | Description                                                                                     |
 |--------|-------|--------|----------|-------------------------------------------------------------------------------------------------|
 | appKey | URL   | String | O        | Launching Service Appkey                                                                        |
 | subKey | Query | String | X        | Key used to retrieve only specific data from Launching information</br>Starts with "launching." |
 
-### Response
+<a id="response"></a>
+### Response { #response }
 
 | Name      | Type | Format | Description           |
 |-----------|------|--------|-----------------------|
 | launching | Body | Object | Launching information |
 
-### Examples
+<a id="examples"></a>
+### Examples { #examples }
 
 <details><summary>Query All</summary>
 

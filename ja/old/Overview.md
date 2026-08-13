@@ -1,8 +1,12 @@
-## Common > Launching > Overview
+<!-- pre-align:aligned sig=ec495d992556 -->
+
+<a id="common-launching-overview"></a>
+## Common > Launching > Overview { #common-launching-overview }
 
 모바일 앱을 실행하기 위해서는 서버의 정보, 공지사항 URL, 다운로드 URL등 다양한 정보가 필요합니다. 하지만 모바일 앱에 필요한 정보가 변경 된다면 새로운 모바일 앱 배포가 필요 합니다.  Launching은 모바일 앱 실행 시 초기 실행에 필요한 다양한 정보를 실시간 반영하는 기능을 제공하여 앱 배포 없이 운영하도록 지원합니다.
 
-## 주요 기능
+<a id="section-1"></a>
+## 주요 기능 { #section-1 }
 
 다음과 같은 기능을 제공합니다.
 
@@ -18,7 +22,8 @@
 * **사용자가 설정한 시간 동안 모바일 앱에 메시지를 공지 가능**  
 사용자가 설정한 임의의 시간 동안에만 점검 일정 및 이벤트 등의 공지 메시지를 제공 할 수 있으며, 서비스 점검 동안 서비스 제공을 중단하고 점검 메시지를 공지 할 수 있습니다.
 
-## 서비스 용어
+<a id="section-2"></a>
+## 서비스 용어 { #section-2 }
 
 Launching 서비스에서는 다음 용어를 사용 합니다.
 
