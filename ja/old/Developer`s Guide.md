@@ -8,7 +8,7 @@ ConsoleでLaunchingサービスを有効化した後、モバイルアプリに�
 <a id="launching"></a>
 ## Launching データ照会 { #launching }
 
-ConsoleでLaunchingサービスを設定したLaunching情報を照会できます。
+Consoleで設定したLaunching情報を照会する方法です。
 
 [URL]
 
@@ -69,8 +69,8 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
-> [参考]
-> リクエスト結果はJSON文字列です。アプリケーションでは、この文字列をパースして使用します。
+> [参考]  
+> リクエスト結果はJSON文字列です。アプリケーションでは、この文字列をパースして使用します。  
 
 <a id="section-1"></a>
 ## エラーコード { #section-1 }
