@@ -69,8 +69,8 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
-> [Note]
-> The request result is a JSON string. You can parse the string in your application to use it.
+> [Note]  
+> The request result is a JSON string. You can parse the string in your application to use it.  
 
 <a id="section-1"></a>
 ## Error Code { #section-1 }
