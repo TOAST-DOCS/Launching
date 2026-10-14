@@ -3,12 +3,12 @@
 <a id="common-launching-developers-guide"></a>
 ## Common > Launching > Developer's Guide { #common-launching-developers-guide }
 
-Console에서 Launching 서비스를 활성화 한 후, 모바일 앱에 필요한 Launching 정보를 설정하였다면 다음과 같이 해당 데이터를 조회 할 수 있습니다.
+ConsoleでLaunchingサービスを有効化した後、モバイルアプリに必要なLaunching情報を設定した場合、次のようにデータを照会できます。
 
 <a id="launching"></a>
-## Launching 데이터 조회 { #launching }
+## Launching データ照会 { #launching }
 
-Console을 사용하여 설정한 Launching 정보를 조회할 수 있는 방법입니다.
+Consoleで設定したLaunching情報を照会する方法です。
 
 [URL]
 
@@ -17,11 +17,11 @@ GET https://api-lnc.cloud.toast.com/launching/v2/application/{appKey}/launching
 Content-Type: application/json
 ```
 
-[URL 파라미터]
+[URLパラメータ]
 
-| 이름     | 자료형    | 설명                   |
+| 名前 | データ型 | 説明 |
 | ------ | ------ | -------------------- |
-| appkey | String | 사용자 Launching AppKey |
+| appkey | String | ユーザーLaunching AppKey |
 
 [Example Request]
 
@@ -69,20 +69,20 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
-> [참고]  
-> 요청 결과는 JSON 문자열입니다. 애플리케이션에서는 해당 문자열을 파싱하여 사용하면 됩니다.  
+> [参考]  
+> リクエスト結果はJSON文字列です。アプリケーションでは、この文字列をパースして使用します。  
 
 <a id="section-1"></a>
-## 에러 코드 { #section-1 }
+## エラーコード { #section-1 }
 
-에러 코드는 HTTP Response Status 결과코드 값을 의미합니다.
+エラーコードはHTTP Response Statusの結果コード値を意味します。
 
-[표1 에러 코드]
+[表1 エラーコード]
 
-| Result Code | 설명                                                |
+| Result Code | 説明                                                |
 | ----------- | ------------------------------------------------- |
-| 200         | OK : 요청 성공                                        |
-| 400         | Bad Request : 잘못된 요청일 경우                          |
-| 401         | Unauthorized : 유효하지 않은 App Key일 경우                |
-| 404         | Not Found : 요청한 리소스를 찾을 수 없을 경우                   |
-| 500         | Internal Server Error : 서버 내부적인 오류로, 관리자에게 문의 바람. |
+| 200         | OK : リクエスト成功                                      |
+| 400         | Bad Request : リクエストが正しくない場合                          |
+| 401         | Unauthorized : 無効なApp Keyの場合                     |
+| 404         | Not Found : リクエストしたリソースが見つからない場合                   |
+| 500         | Internal Server Error : サーバー内部エラーのため、管理者にお問い合わせください。 |
